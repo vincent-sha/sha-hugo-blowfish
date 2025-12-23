@@ -11,44 +11,44 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Docs"
+  name = "文档"
   pageRef = "docs"
   weight = 10
 
 [[main]]
-  name = "Shortcodes"
+  name = "简码"
   pageRef = "docs/shortcodes"
   weight = 15
 
 [[main]]
-  name = "Examples"
+  name = "示例"
   weight = 20
 
 [[main]]
-  name = "Samples"
-  parent = "Examples"
+  name = "功能示例"
+  parent = "示例"
   pageRef = "samples"
   weight = 16
 
 [[main]]
-  name = "Showcase"
-  parent = "Examples"
+  name = "模板示例"
+  parent = "示例"
   pageRef = "examples"
   weight = 30
 
 [[main]]
-  name = "Recipes"
-  parent = "Examples"
+  name = "部署指南"
+  parent = "示例"
   pageRef = "guides"
   weight = 40
 
 [[main]]
-  name = "Users"
+  name = "用户列表"
   pageRef = "users"
   weight = 90
 
 [[main]]
-  name = "Merch"
+  name = "周边"
   url = "https://www.teepublic.com/user/blowfish-store/t-shirts"
   weight = 100
 
@@ -81,11 +81,11 @@
 # the copyright notice. Configure as per the main menu above.
 
  [[footer]]
-   name = "Tags"
+   name = "标签"
    pageRef = "tags"
    weight = 10
 
  [[footer]]
-   name = "Authors"
+   name = "作者"
    pageRef = "authors"
    weight = 20
