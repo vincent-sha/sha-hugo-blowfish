@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>欢迎来到 Blowfish ！ on Blowfish</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in 欢迎来到 Blowfish ！ on Blowfish</description>
+    <title>First on Blowfish</title>
+    <link>http://localhost:1313/tags/first/</link>
+    <description>Recent content in First on Blowfish</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2025 Blowfish</copyright>
-    <lastBuildDate>Tue, 25 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/first/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>我的第一篇博客文章</title>
