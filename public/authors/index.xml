@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors on Blowfish</title>
+    <title>作者简介 on 文森的科技小站</title>
     <link>http://localhost:1313/authors/</link>
-    <description>Recent content in Authors on Blowfish</description>
+    <description>Recent content in 作者简介 on 文森的科技小站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>© 2025 Blowfish</copyright>
-    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>vincentshajing@gmail.com (文森)</managingEditor>
+    <webMaster>vincentshajing@gmail.com (文森)</webMaster>
+    <copyright>© 2025 文森</copyright>
+    <lastBuildDate>Tue, 25 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>文森</title>
+      <link>http://localhost:1313/authors/vincentsha/</link>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (文森)</author>
+      <guid>http://localhost:1313/authors/vincentsha/</guid>
+      <description></description>
+      
+    </item>
     
   </channel>
 </rss>

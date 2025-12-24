@@ -1,0 +1,12 @@
+{
+    "name": "文森",
+    "image" : "img/author.jpg",
+    "bio": "文森的科技小站",
+    "social": [
+        { "twitter": "https://x.com/@vincentshaj" },
+        { "youtube": "https://www.youtube.com/@vincentsha4819" },
+        { "github": "https://github.com/vincent-sha" },
+        { "facebook": "https://facebook.com/vincent-sha" },
+        { "instagram": "https://instagram.com/vincent-sha" }
+    ]
+}

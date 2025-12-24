@@ -1,4 +1,6 @@
 languageCode = "en"
+# Disable English so site defaults to 简体中文 and language option is hidden
+disabled = true
 languageName = "English"
 weight = 2
 title = "Blowfish"

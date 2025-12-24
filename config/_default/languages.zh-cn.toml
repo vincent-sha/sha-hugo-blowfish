@@ -1,22 +1,23 @@
 languageCode = "zh-cn"
 languageName = "简体中文"
 weight = 1
-title = "Blowfish"
+title = "文森的科技小站"
 
 [params]
   displayName = "简体中文"
   isoCode = "zh-cn"
   rtl = false
   dateFormat = "2006-01-02"
-  logo = "img/blowfish_logo_transparent.png"
-  description = "一个强大、轻量级的 Hugo 主题。"
+  description = "文森的科技小站。"
 
+# 默认站点作者设置
 [params.author]
-  name = "Blowfish"
-  image = "img/blowfish_logo.png"
-  headline = "一个强大、轻量级的 Hugo 主题。"
-  bio = "一个强大、轻量级的 Hugo 主题。"
-  links = [
-    { x-twitter = "https://twitter.com/burufugu" },
-    { github = "https://github.com/nunocoracao/blowfish" },
-  ]
+   name = "文森"
+   email = "vincentshajing@gmail.com"
+   image = "img/author.jpg"
+   headline = "文森的科技小站。"
+   bio = "文森的科技小站"
+   links = [
+     { x-twitter = "https://x.com/@vincentshaj" },
+     { github = "https:/github.com/vincent-sha" },
+   ]
