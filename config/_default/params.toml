@@ -17,7 +17,7 @@ enableStructuredBreadcrumbs = true
 
 replyByEmail = false
 
-# mainSections = ["section1", "section2"]
+mainSections = ["posts"]
 # robots = ""
 
 disableImageOptimization = false
@@ -26,14 +26,14 @@ disableTextInHeader = false
 # backgroundImageWidth = 1200
 
 defaultBackgroundImage = "img/ripples.svg" # used as default for background images
-# defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
-# defaultSocialImage = "/android-chrome-512x512.png" # used as default for social media sharing (Open Graph and Twitter)
+defaultFeaturedImage = "img/fireflies.svg" # used as default for featured images in all articles
+defaultSocialImage = "/android-chrome-512x512.png" # used as default for social media sharing (Open Graph and Twitter)
 hotlinkFeatureImage = false
 # imagePosition = "50% 50%"
 
 highlightCurrentMenuArea = true
 smartTOC = true
-smartTOCHideUnfocusedChildren = true
+smartTOCHideUnfocusedChildren = false
 
 fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384", "sha256"
 
@@ -54,12 +54,12 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   layout = "custom" # valid options: page, profile, hero, card, background, custom
   #homepageImage = "img/hero-2.jpg" # used in: hero, and card
   showRecent = false
-  showRecentItems = 5
-  showMoreLink = false
+  showRecentItems = 12
+  showMoreLink = true
   showMoreLinkDest = "/posts/"
   cardView = true
   cardViewScreenWidth = false
-  layoutBackgroundBlur = false # only used when layout equals background
+  layoutBackgroundBlur = true # only used when layout equals background
   disableHeroImageFilter = false # only used when layout equals hero
 
 [article]
@@ -72,7 +72,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showAuthorBottom = false
   showAuthorImage = true
   showHero = true
-  heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = true
@@ -87,7 +87,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showReadingTime = false
   showTableOfContents = false
   showRelatedContent = true
-  relatedContentLimit = 3
+  relatedContentLimit = 6
   showTaxonomies = true # use showTaxonomies OR showCategoryOnly, not both
   showCategoryOnly = false # use showTaxonomies OR showCategoryOnly, not both
   showAuthorsBadges = false
@@ -97,8 +97,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showZenMode = false
 
 [list]
-  showHero = false
-  #heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
@@ -120,8 +120,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
 [taxonomy]
   showTermCount = true
-  showHero = false
-  #heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
   showViews = false
   showLikes = false
@@ -129,8 +129,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   cardView = false
 
 [term]
-  showHero = false
-  #heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
   showViews = false
   showLikes = false
