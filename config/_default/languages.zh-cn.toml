@@ -12,7 +12,7 @@ title = "文森的科技小站"
 
 # 默认站点作者设置
 [params.author]
-   name = "文森"
+   name = "Vincent Sha"
    email = "vincentshajing@gmail.com"
    image = "img/author.jpg"
    headline = "文森的科技小站。"
@@ -20,4 +20,5 @@ title = "文森的科技小站"
    links = [
      { x-twitter = "https://x.com/@vincentshaj" },
      { github = "https:/github.com/vincent-sha" },
+     { youtube = "https://www.youtube.com/@vincentsha4819" }
    ]
