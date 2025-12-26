@@ -1,0 +1,78 @@
+{{/* Get remote data. */}}
+{{ $url := "https://my-sonicjs-app.vincentshajing.workers.dev/api/content" }}
+{{ $data := dict }}
+{{ with try (resources.GetRemote $url) }}
+  {{ with .Err }}
+    {{ errorf "Unable to get remote resource %s: %s" $url . }}
+  {{ else with .Value }}
+    {{ $data = . | transform.Unmarshal }}
+  {{ else }}
+    {{ errorf "Unable to get remote resource %s: %s" $url }}
+  {{ end }}
+{{ end }}
+
+{{/* Add pages. */}}
+{{ range $data.data }}
+  {{ $itemData := .data }}
+  {{ if $itemData.content }}
+    {{/* Fix content formatting: replace double spaces with newlines */}}
+    {{ $contentValue := replace $itemData.content "  " (printf "\n") }}
+    {{ $content := dict "mediaType" "text/markdown" "value" $contentValue }}
+    
+    {{/* Handle Date */}}
+    {{ $date := "2025-01-01" }}
+    {{ if $itemData.date }}
+      {{ $date = $itemData.date }}
+    {{ else if $itemData.publishedAt }}
+      {{ $date = $itemData.publishedAt }}
+    {{ end }}
+
+    {{/* Fix date format for YYYY-MM-DDTHH:MM */}}
+    {{ if eq (len $date) 16 }}
+      {{ $date = printf "%s:00+08:00" $date }}
+    {{ end }}
+
+    {{ $dates := dict "date" (time.AsTime $date) }}
+
+    {{/* Handle Tags */}}
+    {{ $tags := slice }}
+    {{ if $itemData.tags }}
+      {{ $tags = split $itemData.tags "," }}
+    {{ end }}
+
+    {{/* Handle Categories */}}
+    {{ $categories := slice }}
+    {{ if $itemData.categories }}
+      {{ $categories = split $itemData.categories "," }}
+    {{ end }}
+
+    {{/* Handle Feature Image */}}
+    {{ $featureimage := "" }}
+    {{ if $itemData.featureimage }}
+        {{ $featureimage = $itemData.featureimage }}
+    {{ else if $itemData.featuredImage }}
+        {{ $featureimage = $itemData.featuredImage }}
+    {{ end }}
+    
+    {{ if and $featureimage (not (hasPrefix $featureimage "http")) }}
+        {{ $featureimage = printf "https://my-sonicjs-app.vincentshajing.workers.dev%s" $featureimage }}
+    {{ end }}
+
+    {{ $params := dict 
+      "description" (or $itemData.description $itemData.excerpt)
+      "featureimage" $featureimage
+      "tags" $tags
+      "categories" $categories
+    }}
+
+    {{ $page := dict
+      "content" $content
+      "dates" $dates
+      "kind" "page"
+      "params" $params
+      "path" (or $itemData.slug .slug)
+      "title" (or $itemData.title .title)
+    }}
+    {{ $.AddPage $page }}
+  {{ end }}
+{{ end }}
