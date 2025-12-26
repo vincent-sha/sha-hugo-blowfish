@@ -30,10 +30,6 @@
   pageRef = "tags"
   weight = 40
 
-[[main]]
-  name = "关于我"
-  pageRef = "about"
-  weight = 50
 
 
 # -- Footer Menu --
@@ -41,11 +37,17 @@
 # the copyright notice. Configure as per the main menu above.
 
  [[footer]]
-   name = "标签"
-   pageRef = "tags"
+   name = "分类"
+   pageRef = "categories"
    weight = 10
 
  [[footer]]
-   name = "作者"
-   pageRef = "authors"
+   name = "标签"
+   pageRef = "tags"
    weight = 20
+
+ [[footer]]
+   name = "关于我"
+   pageRef = "about/aboutme/"
+   weight = 30
+  
