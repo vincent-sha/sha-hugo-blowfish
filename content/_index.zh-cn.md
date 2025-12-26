@@ -1,19 +1,6 @@
 ---
 title: "欢迎来到文森的科技小站! :tada:"
-description: "此页面是使用 Hugo 的 Blowfish 主题搭建的"
+description: "技术教程、科技资讯与潮流数码推荐，关注人工智能（AI）、区块链与元宇宙；分享前端 Hugo、后端 SonicJS 与 Strapi、Swift 编程，以及 Cloudflare 部署经验。"
 ---
 
-<div class="flex px-4 py-2 mb-8 text-base rounded-md bg-primary-100 dark:bg-primary-900">
-  <span class="flex items-center pe-3 text-primary-400">
-    {{< icon "triangle-exclamation" >}}
-  </span>
-  <span class="flex items-center justify-between grow dark:text-neutral-300">
-    <span class="prose dark:prose-invert"> 这是 <code id="layout">background</code> 的样式示例。</span>
-    <button
-      id="switch-layout-button"
-      class="px-4 mx-[3px] !text-neutral !no-underline rounded-md bg-primary-600 hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
-    >
-      切换 layout &orarr;
-    </button>
-  </span>
-</div>
+欢迎来到文森的科技小站！这里提供浅显易懂的技术教程，包含前端应用和后端开发，以及移动端应用开发；这里传递最新的科技资讯，重点关注人工智能（AI）、区块链与元宇宙的发展；这里分享最潮的科技产品，包括流媒体、VR眼镜、Apple产品等。
