@@ -1,7 +1,7 @@
 ---
 title: "关于我"
 description: "前端工程师，热衷静态站点、性能优化与可访问性。"
-featureimage: "img/hero-2.jpg"
+featureimage: "img/hero-2.webp"
 ---
 
 # 网站简介

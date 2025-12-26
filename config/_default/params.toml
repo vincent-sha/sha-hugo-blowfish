@@ -25,7 +25,7 @@ disableImageOptimizationMD = false
 disableTextInHeader = false
 # backgroundImageWidth = 1200
 
-defaultBackgroundImage = "img/backgroud-03.jpg" # used as default for background images
+defaultBackgroundImage = "img/hero-1.webp" # used as default for background images
 defaultFeaturedImage = "img/hero-1.png" # used as default for featured images in all articles
 defaultSocialImage = "/android-chrome-512x512.png" # used as default for social media sharing (Open Graph and Twitter)
 hotlinkFeatureImage = false
