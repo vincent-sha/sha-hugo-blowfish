@@ -61,7 +61,7 @@
   <meta property="og:url" content="http://localhost:1313/posts/git-and-github-introduction-guide/">
   <meta property="og:site_name" content="文森的科技小站">
   <meta property="og:title" content="Git与GitHub入门指南">
-  <meta property="og:description" content="文森的科技小站。">
+  <meta property="og:description" content="一目了然，掌握Git的基本概念及其工作流程，并阐述了GitHub作为协作平台的作用，帮助技术小白快速掌握从安装、分支管理到协作开发的完整使用方法。">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -73,7 +73,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Git与GitHub入门指南">
-  <meta name="twitter:description" content="文森的科技小站。">
+  <meta name="twitter:description" content="一目了然，掌握Git的基本概念及其工作流程，并阐述了GitHub作为协作平台的作用，帮助技术小白快速掌握从安装、分支管理到协作开发的完整使用方法。">
 
   
   
@@ -981,6 +981,209 @@
       
       
       
+      
+        <div class="order-first lg:ml-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
+          <div class="toc ps-5 print:hidden lg:sticky lg:top-[140px]">
+            
+              <details
+  open
+  id="TOCView"
+  class="toc-right mt-0 overflow-y-auto overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg -ms-5 ps-5 pe-2 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目录
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#git和github基本概念">Git和GitHub基本概念</a>
+      <ul>
+        <li><a href="#git简介">Git简介</a></li>
+        <li><a href="#github简介">GitHub简介</a></li>
+        <li><a href="#为什么使用git">为什么使用Git？</a></li>
+      </ul>
+    </li>
+    <li><a href="#如何使用git">如何使用Git？</a>
+      <ul>
+        <li><a href="#学习git基础命令">学习Git基础命令</a></li>
+        <li><a href="#git工作流入门">Git工作流入门</a></li>
+      </ul>
+    </li>
+    <li><a href="#git与github初次配置"><strong>Git与</strong>GitHub初次配置</a>
+      <ul>
+        <li><a href="#1下载并安装最新版本的git">1、下载并安装最新版本的Git</a></li>
+        <li><a href="#综合一键检测脚本复制粘贴运行">综合一键检测脚本（复制粘贴运行）</a></li>
+        <li><a href="#2配置git身份信息"><strong>2、配置Git身份信息</strong></a></li>
+        <li><a href="#3配置github-ssh密钥推荐"><strong>3、配置GitHub SSH密钥（推荐）</strong></a></li>
+        <li><a href="#4测试git和github连通">4、测试git和GitHub连通</a></li>
+      </ul>
+    </li>
+    <li><a href="#git基本操作流程">Git基本操作流程</a>
+      <ul>
+        <li><a href="#场景一本地全新项目--推到-github-新仓库">场景一：本地全新项目 → 推到 GitHub 新仓库</a></li>
+        <li><a href="#场景二本地已有-git-项目--推到-github">场景二：本地已有 Git 项目 → 推到 GitHub</a></li>
+        <li><a href="#每天更新代码只需-3-行">每天更新代码只需 3 行</a></li>
+        <li><a href="#场景三克隆远程仓库到本地开展工作流程">场景三：克隆远程仓库到本地，开展工作流程</a></li>
+        <li><a href="#场景四本地有修改未提交如何拉取远程合并">场景四：本地有修改未提交，如何拉取远程合并</a></li>
+      </ul>
+    </li>
+    <li><a href="#相关资源">相关资源</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg -ms-5 ps-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 -ms-5 ps-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目录
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#git和github基本概念">Git和GitHub基本概念</a>
+      <ul>
+        <li><a href="#git简介">Git简介</a></li>
+        <li><a href="#github简介">GitHub简介</a></li>
+        <li><a href="#为什么使用git">为什么使用Git？</a></li>
+      </ul>
+    </li>
+    <li><a href="#如何使用git">如何使用Git？</a>
+      <ul>
+        <li><a href="#学习git基础命令">学习Git基础命令</a></li>
+        <li><a href="#git工作流入门">Git工作流入门</a></li>
+      </ul>
+    </li>
+    <li><a href="#git与github初次配置"><strong>Git与</strong>GitHub初次配置</a>
+      <ul>
+        <li><a href="#1下载并安装最新版本的git">1、下载并安装最新版本的Git</a></li>
+        <li><a href="#综合一键检测脚本复制粘贴运行">综合一键检测脚本（复制粘贴运行）</a></li>
+        <li><a href="#2配置git身份信息"><strong>2、配置Git身份信息</strong></a></li>
+        <li><a href="#3配置github-ssh密钥推荐"><strong>3、配置GitHub SSH密钥（推荐）</strong></a></li>
+        <li><a href="#4测试git和github连通">4、测试git和GitHub连通</a></li>
+      </ul>
+    </li>
+    <li><a href="#git基本操作流程">Git基本操作流程</a>
+      <ul>
+        <li><a href="#场景一本地全新项目--推到-github-新仓库">场景一：本地全新项目 → 推到 GitHub 新仓库</a></li>
+        <li><a href="#场景二本地已有-git-项目--推到-github">场景二：本地已有 Git 项目 → 推到 GitHub</a></li>
+        <li><a href="#每天更新代码只需-3-行">每天更新代码只需 3 行</a></li>
+        <li><a href="#场景三克隆远程仓库到本地开展工作流程">场景三：克隆远程仓库到本地，开展工作流程</a></li>
+        <li><a href="#场景四本地有修改未提交如何拉取远程合并">场景四：本地有修改未提交，如何拉取远程合并</a></li>
+      </ul>
+    </li>
+    <li><a href="#相关资源">相关资源</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+<script>
+  (function () {
+    'use strict'
+
+    const SCROLL_OFFSET_RATIO = 0.33
+    const TOC_SELECTOR = '#TableOfContents'
+    const ANCHOR_SELECTOR = '.anchor'
+    const TOC_LINK_SELECTOR = 'a[href^="#"]'
+    const NESTED_LIST_SELECTOR = 'li ul'
+    const ACTIVE_CLASS = 'active'
+    let isJumpingToAnchor = false
+
+    function getActiveAnchorId(anchors, offsetRatio) {
+      const threshold = window.scrollY + window.innerHeight * offsetRatio
+      const tocLinks = [...document.querySelectorAll('#TableOfContents a[href^="#"]')]
+      const tocIds = new Set(tocLinks.map(link => link.getAttribute('href').substring(1)))
+
+      if (isJumpingToAnchor) {
+        for (let i = 0; i < anchors.length; i++) {
+          const anchor = anchors[i]
+          if (!tocIds.has(anchor.id)) continue
+          const top = anchor.getBoundingClientRect().top + window.scrollY
+          if (Math.abs(window.scrollY - top) < 100) {
+            return anchor.id
+          }
+        }
+      }
+
+      for (let i = anchors.length - 1; i >= 0; i--) {
+        const top = anchors[i].getBoundingClientRect().top + window.scrollY
+        if (top <= threshold && tocIds.has(anchors[i].id)) {
+          return anchors[i].id
+        }
+      }
+      return anchors.find(anchor => tocIds.has(anchor.id))?.id || ''
+    }
+
+    function updateTOC({ toc, anchors, links, scrollOffset, collapseInactive }) {
+      const activeId = getActiveAnchorId(anchors, scrollOffset)
+      if (!activeId) return
+
+      links.forEach(link => {
+        const isActive = link.getAttribute('href') === `#${activeId}`
+        link.classList.toggle(ACTIVE_CLASS, isActive)
+
+        if (collapseInactive) {
+          const ul = link.closest('li')?.querySelector('ul')
+          if (ul) ul.style.display = isActive ? '' : 'none'
+        }
+      })
+
+      if (collapseInactive) {
+        const activeLink = toc.querySelector(`a[href="#${CSS.escape(activeId)}"]`)
+        let el = activeLink
+        while (el && el !== toc) {
+          if (el.tagName === 'UL') el.style.display = ''
+          if (el.tagName === 'LI') el.querySelector('ul')?.style.setProperty('display', '')
+          el = el.parentElement
+        }
+      }
+    }
+
+    function initTOC() {
+      const toc = document.querySelector(TOC_SELECTOR)
+      if (!toc) return
+
+      const collapseInactive = false
+      const anchors = [...document.querySelectorAll(ANCHOR_SELECTOR)]
+      const links = [...toc.querySelectorAll(TOC_LINK_SELECTOR)]
+
+      if (collapseInactive) {
+        toc.querySelectorAll(NESTED_LIST_SELECTOR).forEach(ul => ul.style.display = 'none')
+      }
+
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          isJumpingToAnchor = true
+        })
+      })
+
+      const config = {
+        toc,
+        anchors,
+        links,
+        scrollOffset: SCROLL_OFFSET_RATIO,
+        collapseInactive
+      }
+
+      window.addEventListener('scroll', () => updateTOC(config), { passive: true })
+      window.addEventListener('hashchange', () => updateTOC(config), { passive: true })
+
+      updateTOC(config)
+    }
+
+    document.readyState === 'loading'
+      ? document.addEventListener('DOMContentLoaded', initTOC)
+      : initTOC()
+  })()
+</script>
+
+
+            
+          </div>
+        </div>
       
 
 

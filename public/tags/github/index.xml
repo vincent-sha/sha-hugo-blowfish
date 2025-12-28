@@ -17,7 +17,7 @@
       <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
       <author>vincentshajing@gmail.com (Vincent Sha)</author>
       <guid>http://localhost:1313/posts/git-common-commands-guide/</guid>
-      <description></description>
+      <description>本文系统整理了Git的常用命令，包括初始化仓库、配置用户信息、分支管理、代码提交、查看日志、远程操作、文件管理等，帮助用户快速掌握Git版本控制的基本操作与进阶用法，提高代码管理效率。</description>
       
     </item>
     
@@ -27,7 +27,7 @@
       <pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate>
       <author>vincentshajing@gmail.com (Vincent Sha)</author>
       <guid>http://localhost:1313/posts/git-and-github-introduction-guide/</guid>
-      <description></description>
+      <description>一目了然，掌握Git的基本概念及其工作流程，并阐述了GitHub作为协作平台的作用，帮助技术小白快速掌握从安装、分支管理到协作开发的完整使用方法。</description>
       
     </item>
     
