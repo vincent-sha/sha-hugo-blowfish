@@ -43,7 +43,9 @@
 
     {{/* Handle Categories */}}
     {{ $categories := slice }}
-    {{ if $itemData.categories }}
+    {{ if $itemData.category }}
+      {{ $categories = split $itemData.category "," }}
+    {{ else if $itemData.categories }}
       {{ $categories = split $itemData.categories "," }}
     {{ end }}
 
