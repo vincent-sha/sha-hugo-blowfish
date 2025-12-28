@@ -14,7 +14,8 @@
 {{/* Add pages. */}}
 {{ range $data.data }}
   {{ $itemData := .data }}
-  {{ if $itemData.content }}
+  {{/* 只处理已发布的文章 - 关键修复点 */}}
+  {{ if and $itemData.content (eq .status "published") }}
     {{/* Fix content formatting: replace double spaces with newlines */}}
     {{ $contentValue := replace $itemData.content "  " (printf "\n") }}
     {{ $content := dict "mediaType" "text/markdown" "value" $contentValue }}
