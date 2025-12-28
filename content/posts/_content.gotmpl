@@ -73,6 +73,7 @@
       "params" $params
       "path" (or $itemData.slug .slug)
       "title" (or $itemData.title .title)
+      "summary" (or $itemData.summary $itemData.excerpt $itemData.description)
     }}
     {{ $.AddPage $page }}
   {{ end }}
