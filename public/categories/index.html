@@ -238,10 +238,10 @@
       "name": "Vincent Sha"
     },
     "copyrightYear": "2025",
-    "dateCreated": "2025-11-27T00:00:00\u002b00:00",
-    "datePublished": "2025-11-27T00:00:00\u002b00:00",
+    "dateCreated": "2025-11-02T00:00:00\u002b00:00",
+    "datePublished": "2025-11-02T00:00:00\u002b00:00",
     
-    "dateModified": "2025-11-27T00:00:00\u002b00:00",
+    "dateModified": "2025-11-02T00:00:00\u002b00:00",
     
     
     
@@ -273,6 +273,29 @@
   
 
   
+  
+    
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+      <script>
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyB6Oo0rYpI7sMXY5oUz8lhwFdfjk09itO4",
+      authDomain: "hugo-blowfish-ea38b.firebaseapp.com",
+      projectId: "hugo-blowfish-ea38b",
+      storageBucket: "hugo-blowfish-ea38b.firebasestorage.app",
+      messagingSenderId: "304940475174",
+      appId: "1:304940475174:web:db67da447497f5e6ed97e7",
+      measurementId: "G-VRKE1MJWEH"
+    };
+
+        var app = firebase.initializeApp(firebaseConfig);
+        var db = firebase.firestore();
+        var auth = firebase.auth();
+
+      </script>
+    
   
 
   
@@ -744,13 +767,13 @@
   <h2 class="flex items-center">
     <a
       class="text-xl font-medium decoration-primary-500 hover:underline hover:underline-offset-2"
-      href="/categories/%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8B/"
-      >技术教程</a
+      href="/categories/tutorial/"
+      >Tutorial</a
     >
     
       <span class="px-2 text-base text-primary-500">&middot;</span>
       <span class="text-base text-neutral-400">
-        2
+        1
       </span>
     
   </h2>
