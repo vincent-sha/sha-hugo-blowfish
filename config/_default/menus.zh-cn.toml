@@ -16,19 +16,26 @@
   weight = 10
 
 [[main]]
-  name = "文章"
-  pageRef = "posts"
+  name = "技术教程"
+  pageRef = "categories/tutorial"
   weight = 20
 
 [[main]]
-  name = "分类"
-  pageRef = "categories"
+  name = "科技资讯"
+  pageRef = "categories/tech-news"
   weight = 30
 
 [[main]]
-  name = "标签"
-  pageRef = "tags"
+  name = "科技潮品"
+  pageRef = "categories/tech-gadgets"
   weight = 40
+
+[[main]]
+  name = "全部文章"
+  pageRef = "posts"
+  weight = 50
+
+
 
 
 
