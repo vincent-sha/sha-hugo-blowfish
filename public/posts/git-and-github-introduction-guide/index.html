@@ -998,13 +998,17 @@
       
       
       
+        
+        
+        
+      
       <img
         class="!mt-0 !mb-0 h-24 w-24 rounded-full me-4"
         width="96"
         height="96"
         alt="Vincent Sha"
-        src="/img/avatar.svg"
-        data-zoom-src="/img/avatar.svg">
+        src="/img/avatar-sha02_hu_2801286f495b4f03.png"
+        data-zoom-src="/img/avatar-sha02_hu_8a2327da684f8293.png">
     
   
   <div class="place-self-center">
@@ -1368,15 +1372,15 @@ Git通过SHA压缩技术，使代码提交和检索速度极快。</li>
     
 </h3>
 <p>推荐使用<a href="https://github.github.io/training-kit/"  target="_blank">Git速查表</a>，其中包含常用命令：</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查看当前状态 git status</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 查看分支 git branch</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 切换分支 git checkout [branch-name]</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 添加文件到暂存区 git add [file]</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 提交代码并添加说明 git commit -m &#34;commit message&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 拉取远程更新并合并 git pull</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 推送本地提交 git push</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 查看提交日志 git log</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 查看远程仓库信息 git remote -v</span></span></span></code></pre></div></div>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#007f7f"># 查看当前状态 git status</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 查看分支 git branch</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 切换分支 git checkout [branch-name]</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 添加文件到暂存区 git add [file]</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 提交代码并添加说明 git commit -m &#34;commit message&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 拉取远程更新并合并 git pull</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 推送本地提交 git push</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 查看提交日志 git log</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 查看远程仓库信息 git remote -v</span></span></span></code></pre></div></div>
 <p>更多GitHub相关的技术文档可参考<a href="https://help.github.com/"  target="_blank">GitHub帮助文档</a>。</p>
 
 <h3 class="relative group">Git工作流入门
@@ -1427,116 +1431,116 @@ Git通过SHA压缩技术，使代码提交和检索速度极快。</li>
     </span>
     
 </h3>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> -e <span class="s2">&#34;\n2. 测试 HTTPS 连接...&#34;</span> curl -I https://github.com 2&gt;/dev/null <span class="p">|</span> head -n <span class="m">1</span>
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> -e <span class="s2">&#34;\n3. 测试 Git 远程访问...&#34;</span> git ls-remote https://github.com/git/git.git &gt;/dev/null 2&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="o">&amp;&amp;</span> <span class="nb">echo</span> <span class="s2">&#34;Git 连接 GitHub 成功&#34;</span> <span class="o">||</span> <span class="nb">echo</span> <span class="s2">&#34;Git 连接失败&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> -e <span class="s2">&#34;\n4. 测试 SSH 连接（如果使用 SSH）...&#34;</span> ssh -T git@github.com 2&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="sb">```</span>
-</span></span><span class="line"><span class="cl">---
-</span></span><span class="line"><span class="cl"><span class="c1">### **2、配置Git身份信息**</span>
-</span></span><span class="line"><span class="cl">打开终端，输入以下命令配置用户名和邮箱：
-</span></span><span class="line"><span class="cl"><span class="sb">```</span>bash git config --global user.name <span class="s2">&#34;你的名字&#34;</span> git config --global user.email <span class="s2">&#34;你的GitHub邮箱&#34;</span> <span class="sb">```</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### **3、配置GitHub SSH密钥（推荐）**</span>
-</span></span><span class="line"><span class="cl">打开本地终端，输入以下代码，生成并添加SSH密钥，确保安全免密码推送：
-</span></span><span class="line"><span class="cl"><span class="sb">```</span>bash <span class="c1"># 生成SSH密钥 ssh-keygen -t ed25519 -C &#34;你的GitHub邮箱&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 直接回车三次使用默认路径且不设置密码</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 查看公钥内容 cat ~/.ssh/id_ed25519.pub ```</span>
-</span></span><span class="line"><span class="cl">打开 GitHub → Settings → SSH and GPG keys → New SSH key标题随便填，粘贴刚才复制的内容 → Add SSH key
-</span></span><span class="line"><span class="cl"><span class="c1">### 4、测试git和GitHub连通</span>
-</span></span><span class="line"><span class="cl">终端输入代码：
-</span></span><span class="line"><span class="cl"><span class="sb">```</span>bash ssh -T git@github.com <span class="sb">```</span>
-</span></span><span class="line"><span class="cl">成功会返回：
-</span></span><span class="line"><span class="cl"><span class="sb">```</span> Hi username! You<span class="err">&#39;</span>ve successfully authenticated, but GitHub does not provide shell access. <span class="sb">```</span>
-</span></span><span class="line"><span class="cl">如果提示 Permission denied <span class="o">(</span>publickey<span class="o">)</span>，说明 SSH 密钥未配置或未加载。
-</span></span><span class="line"><span class="cl">---
-</span></span><span class="line"><span class="cl"><span class="c1">## Git基本操作流程</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### 场景一：本地全新项目 → 推到 GitHub 新仓库</span>
-</span></span><span class="line"><span class="cl"><span class="sb">```</span>bash <span class="c1"># 1. 进入项目文件夹 cd /path/to/your/project</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 2. 初始化 Git 仓库 git init</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 3. 添加所有文件 git add .</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 4. 提交（写个有意义的留言） git commit -m &#34;初次提交：我的超级项目 v1.0&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 5. 在 GitHub 网页新建仓库（别勾初始化 README！） #</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">仓库名：my-awesome-project
-</span></span><span class="line"><span class="cl"><span class="c1"># 6. 复制 GitHub 给的 SSH 地址，例如： #</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">git@github.com:vincentS1981/my-awesome-project.git
-</span></span><span class="line"><span class="cl"><span class="c1"># 7. 关联远程仓库 git remote add origin git@github.com:vincentS1981/my-awesome-project.git</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 8. 推上去！（-u 记住以后直接 git push） git push -u origin main ```</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### 场景二：本地已有 Git 项目 → 推到 GitHub</span>
-</span></span><span class="line"><span class="cl"><span class="sb">```</span>bash <span class="nb">cd</span> /path/to/your/existing-project
-</span></span><span class="line"><span class="cl"><span class="c1"># 确认已有 commit git log --oneline</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 关联 + 推送（同上 7~8） git remote add origin git@github.com:vincentS1981/existing-project.git git push -u origin main ```</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### 每天更新代码只需 3 行</span>
-</span></span><span class="line"><span class="cl"><span class="sb">```</span>bash git add . git commit -m <span class="s2">&#34;修复了登录 bug&#34;</span> git push <span class="sb">```</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### 场景三：克隆远程仓库到本地，开展工作流程</span>
-</span></span><span class="line"><span class="cl">1. 直接 clone （根据需要选择如下几种方式）
-</span></span><span class="line"><span class="cl"><span class="sb">```</span>bash <span class="c1">## 完整克隆项目，包括版本提交历史 git clone https://github.com/xxx/yyy.git # 或者 SSH 方式（推荐，免输密码） git clone git@github.com:xxx/yyy.git ## 仅克隆最新一次提交的代码仓库 git clone --depth=1 https://github.com/xxx/yyy.git ```</span>
-</span></span><span class="line"><span class="cl">1. 进入项目目录
-</span></span><span class="line"><span class="cl"><span class="sb">```</span>bash <span class="nb">cd</span> yyy <span class="sb">```</span>
-</span></span><span class="line"><span class="cl">1. 查看远程分支情况
-</span></span><span class="line"><span class="cl"><span class="sb">```</span>bash git branch -a
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 查看所有分支 git remote show origin</span>
-</span></span><span class="line"><span class="cl"> <span class="c1"># 看远程默认分支是哪个 ```</span>
-</span></span><span class="line"><span class="cl">1. 创建并切换到自己的开发分支（强烈推荐！不要直接在 main/master 上改）
-</span></span><span class="line"><span class="cl"><span class="sb">```</span>bash <span class="c1"># 推荐命名方式（选一个你团队习惯的） git checkout -b feature/功能描述 # 或者 git checkout -b dev-你的名字 # 或者 git checkout -b bugfix/xxxxxx</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 推到远程建立同名分支（以后就不用再加 -u 了） git push -u origin feature/功能描述 ```</span>
-</span></span><span class="line"><span class="cl">1. 日常开发完整流程（以后每天都这么干）
-</span></span><span class="line"><span class="cl"><span class="sb">```</span>bash <span class="c1"># 1. 每天开始工作前，先拉最新代码（防止冲突） git pull</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 或者 git pull --rebase（保持线性历史）</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 2. 正常写代码...</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 3. 修改完了，分阶段提交（推荐小提交） git add . git commit -m &#34;feat: 添加用户登录功能&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 4. 推送到远程自己的分支 git push</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 因为之前加了 -u，这里直接 push 就行</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 5. 去 GitLab/GitHub 网页点 Merge Request / Pull Request #</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">让别人 review，合并到 main/master/develop 分支 <span class="sb">```</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### 场景四：本地有修改未提交，如何拉取远程合并</span>
-</span></span><span class="line"><span class="cl"><span class="sb">```</span>bash <span class="c1"># 把本地分支强制重置为远程完全一致的状态（所有本地修改全丢） git fetch origin git reset --hard origin/你的分支名</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 例如你当前在 main 分支 git fetch origin git reset --hard origin/main</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 如果你想顺便清理未跟踪的文件（比如新生成的文件） git clean -fd ```</span>
-</span></span><span class="line"><span class="cl">或者：
-</span></span><span class="line"><span class="cl"><span class="sb">```</span>bash <span class="c1"># 1. 先把本地修改暂时藏起来 git stash push -m &#34;临时保存的修改&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 2. 拉取远程并合并（或变基） git pull</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 或者 git pull --rebase # 或者更稳妥： # git fetch origin # git rebase origin/main</span>
-</span></span><span class="line"><span class="cl"> <span class="c1">#（以 main 为例）</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 3. 之后如果你还想要回刚才的修改 git stash pop</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"> <span class="c1"># 恢复刚才藏起来的修改，可能会有冲突需要手动解决</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 如果确认不要了，直接清空stash git stash drop</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 删掉最近一个 # 或 git stash clear</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"> <span class="c1"># 清空所有stash ```</span>
-</span></span><span class="line"><span class="cl"><span class="c1">## 相关资源</span>
-</span></span><span class="line"><span class="cl">- <span class="o">[</span>GitHub官网<span class="o">](</span>https://github.com/<span class="o">)</span> - <span class="o">[</span>GitHub学习路径<span class="o">](</span>https://resources.github.com/learn/pathways<span class="o">)</span> - <span class="o">[</span>GitHub文档<span class="o">](</span>https://docs.github.com/<span class="o">)</span> - <span class="o">[</span>GitHub市场<span class="o">](</span>https://github.com/marketplace<span class="o">)</span>
-</span></span><span class="line"><span class="cl">---</span></span></code></pre></div></div>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">echo</span> -e <span style="color:#0ff;font-weight:bold">&#34;\n2. 测试 HTTPS 连接...&#34;</span> curl -I https://github.com 2&gt;/dev/null | head -n <span style="color:#ff0;font-weight:bold">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">echo</span> -e <span style="color:#0ff;font-weight:bold">&#34;\n3. 测试 Git 远程访问...&#34;</span> git ls-remote https://github.com/git/git.git &gt;/dev/null 2&gt;&amp;<span style="color:#ff0;font-weight:bold">1</span> &amp;&amp; <span style="color:#fff;font-weight:bold">echo</span> <span style="color:#0ff;font-weight:bold">&#34;Git 连接 GitHub 成功&#34;</span> || <span style="color:#fff;font-weight:bold">echo</span> <span style="color:#0ff;font-weight:bold">&#34;Git 连接失败&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">echo</span> -e <span style="color:#0ff;font-weight:bold">&#34;\n4. 测试 SSH 连接（如果使用 SSH）...&#34;</span> ssh -T git@github.com 2&gt;&amp;<span style="color:#ff0;font-weight:bold">1</span> <span style="color:#0ff;font-weight:bold">```</span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#007f7f">### **2、配置Git身份信息**</span>
+</span></span><span style="display:flex;"><span>打开终端，输入以下命令配置用户名和邮箱：
+</span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">```</span>bash git config --global user.name <span style="color:#0ff;font-weight:bold">&#34;你的名字&#34;</span> git config --global user.email <span style="color:#0ff;font-weight:bold">&#34;你的GitHub邮箱&#34;</span> <span style="color:#0ff;font-weight:bold">```</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f">### **3、配置GitHub SSH密钥（推荐）**</span>
+</span></span><span style="display:flex;"><span>打开本地终端，输入以下代码，生成并添加SSH密钥，确保安全免密码推送：
+</span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">```</span>bash <span style="color:#007f7f"># 生成SSH密钥 ssh-keygen -t ed25519 -C &#34;你的GitHub邮箱&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 直接回车三次使用默认路径且不设置密码</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 查看公钥内容 cat ~/.ssh/id_ed25519.pub ```</span>
+</span></span><span style="display:flex;"><span>打开 GitHub → Settings → SSH and GPG keys → New SSH key标题随便填，粘贴刚才复制的内容 → Add SSH key
+</span></span><span style="display:flex;"><span><span style="color:#007f7f">### 4、测试git和GitHub连通</span>
+</span></span><span style="display:flex;"><span>终端输入代码：
+</span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">```</span>bash ssh -T git@github.com <span style="color:#0ff;font-weight:bold">```</span>
+</span></span><span style="display:flex;"><span>成功会返回：
+</span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">```</span> Hi username! You<span style="color:#f00">&#39;</span>ve successfully authenticated, but GitHub does not provide shell access. <span style="color:#0ff;font-weight:bold">```</span>
+</span></span><span style="display:flex;"><span>如果提示 Permission denied (publickey)，说明 SSH 密钥未配置或未加载。
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#007f7f">## Git基本操作流程</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f">### 场景一：本地全新项目 → 推到 GitHub 新仓库</span>
+</span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">```</span>bash <span style="color:#007f7f"># 1. 进入项目文件夹 cd /path/to/your/project</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 2. 初始化 Git 仓库 git init</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 3. 添加所有文件 git add .</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 4. 提交（写个有意义的留言） git commit -m &#34;初次提交：我的超级项目 v1.0&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 5. 在 GitHub 网页新建仓库（别勾初始化 README！） #</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>仓库名：my-awesome-project
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 6. 复制 GitHub 给的 SSH 地址，例如： #</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git@github.com:vincentS1981/my-awesome-project.git
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 7. 关联远程仓库 git remote add origin git@github.com:vincentS1981/my-awesome-project.git</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 8. 推上去！（-u 记住以后直接 git push） git push -u origin main ```</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f">### 场景二：本地已有 Git 项目 → 推到 GitHub</span>
+</span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">```</span>bash <span style="color:#fff;font-weight:bold">cd</span> /path/to/your/existing-project
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 确认已有 commit git log --oneline</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 关联 + 推送（同上 7~8） git remote add origin git@github.com:vincentS1981/existing-project.git git push -u origin main ```</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f">### 每天更新代码只需 3 行</span>
+</span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">```</span>bash git add . git commit -m <span style="color:#0ff;font-weight:bold">&#34;修复了登录 bug&#34;</span> git push <span style="color:#0ff;font-weight:bold">```</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f">### 场景三：克隆远程仓库到本地，开展工作流程</span>
+</span></span><span style="display:flex;"><span>1. 直接 clone （根据需要选择如下几种方式）
+</span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">```</span>bash <span style="color:#007f7f">## 完整克隆项目，包括版本提交历史 git clone https://github.com/xxx/yyy.git # 或者 SSH 方式（推荐，免输密码） git clone git@github.com:xxx/yyy.git ## 仅克隆最新一次提交的代码仓库 git clone --depth=1 https://github.com/xxx/yyy.git ```</span>
+</span></span><span style="display:flex;"><span>1. 进入项目目录
+</span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">```</span>bash <span style="color:#fff;font-weight:bold">cd</span> yyy <span style="color:#0ff;font-weight:bold">```</span>
+</span></span><span style="display:flex;"><span>1. 查看远程分支情况
+</span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">```</span>bash git branch -a
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 查看所有分支 git remote show origin</span>
+</span></span><span style="display:flex;"><span> <span style="color:#007f7f"># 看远程默认分支是哪个 ```</span>
+</span></span><span style="display:flex;"><span>1. 创建并切换到自己的开发分支（强烈推荐！不要直接在 main/master 上改）
+</span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">```</span>bash <span style="color:#007f7f"># 推荐命名方式（选一个你团队习惯的） git checkout -b feature/功能描述 # 或者 git checkout -b dev-你的名字 # 或者 git checkout -b bugfix/xxxxxx</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 推到远程建立同名分支（以后就不用再加 -u 了） git push -u origin feature/功能描述 ```</span>
+</span></span><span style="display:flex;"><span>1. 日常开发完整流程（以后每天都这么干）
+</span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">```</span>bash <span style="color:#007f7f"># 1. 每天开始工作前，先拉最新代码（防止冲突） git pull</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 或者 git pull --rebase（保持线性历史）</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 2. 正常写代码...</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 3. 修改完了，分阶段提交（推荐小提交） git add . git commit -m &#34;feat: 添加用户登录功能&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 4. 推送到远程自己的分支 git push</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 因为之前加了 -u，这里直接 push 就行</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 5. 去 GitLab/GitHub 网页点 Merge Request / Pull Request #</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>让别人 review，合并到 main/master/develop 分支 <span style="color:#0ff;font-weight:bold">```</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f">### 场景四：本地有修改未提交，如何拉取远程合并</span>
+</span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">```</span>bash <span style="color:#007f7f"># 把本地分支强制重置为远程完全一致的状态（所有本地修改全丢） git fetch origin git reset --hard origin/你的分支名</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 例如你当前在 main 分支 git fetch origin git reset --hard origin/main</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 如果你想顺便清理未跟踪的文件（比如新生成的文件） git clean -fd ```</span>
+</span></span><span style="display:flex;"><span>或者：
+</span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">```</span>bash <span style="color:#007f7f"># 1. 先把本地修改暂时藏起来 git stash push -m &#34;临时保存的修改&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 2. 拉取远程并合并（或变基） git pull</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 或者 git pull --rebase # 或者更稳妥： # git fetch origin # git rebase origin/main</span>
+</span></span><span style="display:flex;"><span> <span style="color:#007f7f">#（以 main 为例）</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 3. 之后如果你还想要回刚才的修改 git stash pop</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#007f7f"># 恢复刚才藏起来的修改，可能会有冲突需要手动解决</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 如果确认不要了，直接清空stash git stash drop</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f"># 删掉最近一个 # 或 git stash clear</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#007f7f"># 清空所有stash ```</span>
+</span></span><span style="display:flex;"><span><span style="color:#007f7f">## 相关资源</span>
+</span></span><span style="display:flex;"><span>- [GitHub官网](https://github.com/) - [GitHub学习路径](https://resources.github.com/learn/pathways) - [GitHub文档](https://docs.github.com/) - [GitHub市场](https://github.com/marketplace)
+</span></span><span style="display:flex;"><span>---</span></span></code></pre></div></div>
 
           
           

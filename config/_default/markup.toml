@@ -19,7 +19,8 @@
         inline = [['\(', '\)']]
 
 [highlight]
-  noClasses = false
+  noClasses = true
+  style = "tokyo-night-dark"
 
 [tableOfContents]
   startLevel = 2
