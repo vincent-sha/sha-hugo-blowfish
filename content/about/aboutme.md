@@ -1,16 +1,20 @@
 ---
-title: "关于我"
+title: "网站简介"
 description: "前端工程师，热衷静态站点、性能优化与可访问性。"
 featureimage: "img/hero-2.webp"
 showComments: false
 showAuthor: true
 showRelatedContent: false
 showTableOfContents: false
+showViews: false
+showLikes: false
+showDate: false
+showBreadcrumbs: false
 ---
 
-# 网站简介
+## 个人介绍
 
-大家好，我是文森（Vincent-SHA)，这是一个轻量型的科技站点，以最快速的静态网站系统Hugo构建。本网站主要热衷于关注各类科技资讯和产品新闻；搜刮各种免费资源、免费部署的开源项目；研究各种低成本创业项目。本网站主要是交流学到的各种有用无用的知识，希望能找到志同道合者一起研究如何创业。
+大家好，我是文森（Vincent-SHA)，这是一个轻量型的科技站点，以最快速的静态网站系统 Hugo 构建。本网站主要热衷于关注各类科技资讯和产品新闻；搜刮各种免费资源、免费部署的开源项目；研究各种低成本创业项目。本网站主要是交流学到的各种有用无用的知识，希望能找到志同道合者一起研究如何创业。
 
 ---
 
@@ -18,7 +22,9 @@ showTableOfContents: false
 
 - 搜刮各种开源的免费资源，传播技术小白都可以看懂的技术教程，关注最新的科技资讯。
 - 静态站点：Hugo、notionNext
-- 无头CMS：SonicJS、Stripa
+{{< article link="/posts/hugo-quick-start-guide/" showSummary=true compactSummary=true >}}
+- Headless CMS：SonicJS、Stripa、Decap CMS
+{{< article link="/posts/sonicjs-modern-typescript-headless-cms/" showSummary=true compactSummary=true >}}
 - 部署平台：Cloudflare
 - 自动化平台：Make
 - 移动端应用：Swift

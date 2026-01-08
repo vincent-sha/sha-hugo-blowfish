@@ -44,17 +44,23 @@
 # the copyright notice. Configure as per the main menu above.
 
  [[footer]]
+   name = "文章"
+   pageRef = "posts"
+   weight = 10
+
+ [[footer]]
    name = "分类"
    pageRef = "categories"
-   weight = 10
+   weight = 20
 
  [[footer]]
    name = "标签"
    pageRef = "tags"
-   weight = 20
+   weight = 30
 
  [[footer]]
-   name = "关于我"
+   name = "网站简介"
    pageRef = "about/aboutme/"
-   weight = 30
+   weight = 40
   
+ 

@@ -1,11 +1,15 @@
 ---
-title: "友链"
+title: "链接分享"
 description: "分享优秀的网站"
 featureimage: "img/hero-1.png"
 showComments: false
 showAuthor: false
 showRelatedContent: false
 showTableOfContents: false
+showViews: false
+showLikes: false
+showDate: false
+showBreadcrumbs: false
 ---
 
 {{< lead >}}
@@ -30,6 +34,8 @@ showTableOfContents: false
 | **Nuxt.js** | https://nuxt.com/ | Vue 生态中的通用框架，支持 SSG 模式 | Vue, JS/TS |
 | **Zola** | [**https://www.getzola.org/**](https://www.getzola.org/) | 单个可执行文件，无依赖，速度极快 | Rust |
 
+---
+
 ## 部署平台
 
 | 平台名称 | 官网地址 | 简介 | 免费额度  |
@@ -41,7 +47,9 @@ showTableOfContents: false
 | **Firebase Hosting** | [**https://firebase.google.com/**](https://firebase.google.com/) | Google 旗下的后端云服务，适合需要集成数据库、鉴权等全栈功能的应用。 | 10GB 存储空间，360MB/天 流量，免费 SSL 及自定义域名。 |
 | **Render** | [**https://render.com/**](https://render.com/) | 界面清爽，支持静态站、Web 服务及数据库的一站式托管。 | 每月 100GB 流量，无限站点，构建时长共享。 |
 | **Surge.sh** | [**https://surge.sh/**](https://surge.sh/) | 为命令行而生，一个命令完成部署，适合前端开发者快速预览 Demo。 | 基本无限流量。支持自定义域名，基础功能永久免费，但自定义 SSL 证书需付费。 |
-| **AWS Amplify** | [**https://aws.amazon.com/amplify/**](https://aws.amazon.com/amplify/) | 亚马逊提供的全栈开发平台，适合已有 AWS 生态或追求企业级可靠性的项目。 | 每月 15GB 流量，5GB 存储，1000 分钟构建时长（免费期通常为 12 个月）。 |
+| **AWS Amplify** | [**https://aws.amazon.com/amplify/**](https://aws.amazon.com/amplify/) | 亚马逊提供的全栈开发平台，适合已有 AWS 生态或追求企业级可靠性的项目。 | 每月 15GB 流量，5GB 存储，1000 分钟构建时长（免费期通常为 12 个月） |
+
+---
 
 ## Headless CMS
 
@@ -56,3 +64,5 @@ showTableOfContents: false
 | **Decap CMS** | [**https://decapcms.org/**](https://decapcms.org/) | 原名 Netlify CMS。基于 Git 存储的 CMS，无需独立数据库。 | Git 仓库 (GitHub, GitLab, Bitbucket) |
 | **PocketBase** | [**https://pocketbase.io/**](https://pocketbase.io/) | 单文件运行的轻量后端，自带鉴权、数据库和文件存储。 | SQLite (内置，含实时订阅功能) |
 | **Appwrite** | [**https://appwrite.io/**](https://appwrite.io/) | 完整的 Firebase 开源替代方案，包含强大的数据库组件。 | MariaDB (底层), 支持多种后端存储适配 |
+
+---
