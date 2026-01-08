@@ -1,16 +1,10 @@
 ---
 title: "友链"
 description: "分享优秀的网站"
-date: 2026-01-08
-showDate: false
+featureimage: "img/hero-1.png"
+showComments: false
 showAuthor: false
-showReadingTime: false
-showTableOfContents: false
-showPagination: false
-showComments: true
-invertPagination: false
-showBreadcrumbs: true
-layout: "simple"
+showRelatedContent: false
 ---
 
 {{< lead >}}
