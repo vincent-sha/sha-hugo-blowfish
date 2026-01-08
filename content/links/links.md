@@ -1,11 +1,11 @@
 ---
 title: "链接分享"
 description: "分享优秀的网站"
-featureimage: "img/hero-1.png"
+featureimage: "img/featured.svg"
 showComments: false
 showAuthor: false
 showRelatedContent: false
-showTableOfContents: false
+showTableOfContents: true
 showViews: false
 showLikes: false
 showDate: false
@@ -34,7 +34,7 @@ showBreadcrumbs: false
 | **Nuxt.js** | https://nuxt.com/ | Vue 生态中的通用框架，支持 SSG 模式 | Vue, JS/TS |
 | **Zola** | [**https://www.getzola.org/**](https://www.getzola.org/) | 单个可执行文件，无依赖，速度极快 | Rust |
 
----
+----
 
 ## 部署平台
 
@@ -49,7 +49,7 @@ showBreadcrumbs: false
 | **Surge.sh** | [**https://surge.sh/**](https://surge.sh/) | 为命令行而生，一个命令完成部署，适合前端开发者快速预览 Demo。 | 基本无限流量。支持自定义域名，基础功能永久免费，但自定义 SSL 证书需付费。 |
 | **AWS Amplify** | [**https://aws.amazon.com/amplify/**](https://aws.amazon.com/amplify/) | 亚马逊提供的全栈开发平台，适合已有 AWS 生态或追求企业级可靠性的项目。 | 每月 15GB 流量，5GB 存储，1000 分钟构建时长（免费期通常为 12 个月） |
 
----
+----
 
 ## Headless CMS
 
@@ -65,4 +65,4 @@ showBreadcrumbs: false
 | **PocketBase** | [**https://pocketbase.io/**](https://pocketbase.io/) | 单文件运行的轻量后端，自带鉴权、数据库和文件存储。 | SQLite (内置，含实时订阅功能) |
 | **Appwrite** | [**https://appwrite.io/**](https://appwrite.io/) | 完整的 Firebase 开源替代方案，包含强大的数据库组件。 | MariaDB (底层), 支持多种后端存储适配 |
 
----
+----
