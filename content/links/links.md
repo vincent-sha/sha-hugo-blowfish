@@ -5,6 +5,7 @@ featureimage: "img/hero-1.png"
 showComments: false
 showAuthor: false
 showRelatedContent: false
+showTableOfContents: false
 ---
 
 {{< lead >}}
