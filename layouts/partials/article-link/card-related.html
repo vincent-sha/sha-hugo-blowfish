@@ -1,53 +1,49 @@
 {{/* Used by
-  1. list.html and term.html (when the cardView option is enabled)
-  2. Recent articles template (when the cardView option is enabled)
-  3. Shortcode list.html
+  1. layouts/partials/related.html (related articles in single page)
 */}}
 {{ $disableImageOptimization := site.Store.Get "disableImageOptimization" }}
 
 {{ $page := .Page }}
 {{ $featured := "" }}
 {{ $featuredURL := "" }}
-{{ if not .Params.hideFeatureImage }}
-  {{/* frontmatter */}}
-  {{ with $page }}
-    {{ with .Params.featureimage }}
-      {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
-        {{ if site.Params.hotlinkFeatureImage }}
-          {{ $featuredURL = . }}
-        {{ else }}
-          {{ $featured = resources.GetRemote . }}
-        {{ end }}
+{{/* frontmatter */}}
+{{ with $page }}
+  {{ with .Params.featureimage }}
+    {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
+      {{ if site.Params.hotlinkFeatureImage }}
+        {{ $featuredURL = . }}
       {{ else }}
-        {{ $featured = resources.Get . }}
+        {{ $featured = resources.GetRemote . }}
       {{ end }}
+    {{ else }}
+      {{ $featured = resources.Get . }}
     {{ end }}
+  {{ end }}
 
-    {{/* page resources */}}
-    {{ if not (or $featured $featuredURL) }}
-      {{ $images := .Resources.ByType "image" }}
-      {{ range slice "*feature*" "*cover*" "*thumbnail*" }}
-        {{ if not $featured }}{{ $featured = $images.GetMatch . }}{{ end }}
-      {{ end }}
+  {{/* page resources */}}
+  {{ if not (or $featured $featuredURL) }}
+    {{ $images := .Resources.ByType "image" }}
+    {{ range slice "*feature*" "*cover*" "*thumbnail*" }}
+      {{ if not $featured }}{{ $featured = $images.GetMatch . }}{{ end }}
     {{ end }}
+  {{ end }}
 
-    {{/* fallback to default */}}
-    {{ if not (or $featured $featuredURL) }}
-      {{ $default := site.Store.Get "defaultFeaturedImage" }}
-      {{ if $default.url }}
-        {{ $featuredURL = $default.url }}
-      {{ else if $default.obj }}
-        {{ $featured = $default.obj }}
-      {{ end }}
+  {{/* fallback to default */}}
+  {{ if not (or $featured $featuredURL) }}
+    {{ $default := site.Store.Get "defaultFeaturedImage" }}
+    {{ if $default.url }}
+      {{ $featuredURL = $default.url }}
+    {{ else if $default.obj }}
+      {{ $featured = $default.obj }}
     {{ end }}
+  {{ end }}
 
-    {{/* generate image URL if not hotlink */}}
-    {{ if not $featuredURL }}
-      {{ with $featured }}
-        {{ $featuredURL = .RelPermalink }}
-        {{ if not (or $disableImageOptimization (eq .MediaType.SubType "svg")) }}
-          {{ $featuredURL = (.Resize "600x").RelPermalink }}
-        {{ end }}
+  {{/* generate image URL if not hotlink */}}
+  {{ if not $featuredURL }}
+    {{ with $featured }}
+      {{ $featuredURL = .RelPermalink }}
+      {{ if not (or $disableImageOptimization (eq .MediaType.SubType "svg")) }}
+        {{ $featuredURL = (.Resize "600x").RelPermalink }}
       {{ end }}
     {{ end }}
   {{ end }}
@@ -57,12 +53,13 @@
 <article
   class="relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600">
   {{ with $featuredURL }}
-    <div class="flex-none relative overflow-hidden thumbnail_card">
+    <div class="flex-none relative overflow-hidden thumbnail_card_related">
       <img
         src="{{ . }}"
         role="presentation"
         loading="lazy"
         decoding="async"
+        fetchpriority="low"
         class="not-prose absolute inset-0 w-full h-full object-cover">
     </div>
   {{ end }}
@@ -94,8 +91,8 @@
     <div class="text-sm text-neutral-500 dark:text-neutral-400">
       {{ partial "article-meta/basic.html" . }}
     </div>
-    {{ if .Params.showSummary | default (.Site.Params.list.showSummary | default false) }}
-      <div class="prose dark:prose-invert py-1 hidden md:block">{{ .Summary | plainify }}</div>
+    {{ if .Params.showSummary | default false }}
+      <div class="prose dark:prose-invert py-1">{{ .Summary | plainify }}</div>
     {{ end }}
   </div>
   <div class="px-6 pt-4 pb-2"></div>
