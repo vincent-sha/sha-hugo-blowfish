@@ -34,7 +34,7 @@ showBreadcrumbs: false
 | **Nuxt.js** | https://nuxt.com/ | Vue 生态中的通用框架，支持 SSG 模式 | Vue, JS/TS |
 | **Zola** | [**https://www.getzola.org/**](https://www.getzola.org/) | 单个可执行文件，无依赖，速度极快 | Rust |
 
-----
+---
 
 ## 部署平台
 
@@ -49,7 +49,7 @@ showBreadcrumbs: false
 | **Surge.sh** | [**https://surge.sh/**](https://surge.sh/) | 为命令行而生，一个命令完成部署，适合前端开发者快速预览 Demo。 | 基本无限流量。支持自定义域名，基础功能永久免费，但自定义 SSL 证书需付费。 |
 | **AWS Amplify** | [**https://aws.amazon.com/amplify/**](https://aws.amazon.com/amplify/) | 亚马逊提供的全栈开发平台，适合已有 AWS 生态或追求企业级可靠性的项目。 | 每月 15GB 流量，5GB 存储，1000 分钟构建时长（免费期通常为 12 个月） |
 
-----
+---
 
 ## Headless CMS
 
@@ -65,4 +65,17 @@ showBreadcrumbs: false
 | **PocketBase** | [**https://pocketbase.io/**](https://pocketbase.io/) | 单文件运行的轻量后端，自带鉴权、数据库和文件存储。 | SQLite (内置，含实时订阅功能) |
 | **Appwrite** | [**https://appwrite.io/**](https://appwrite.io/) | 完整的 Firebase 开源替代方案，包含强大的数据库组件。 | MariaDB (底层), 支持多种后端存储适配 |
 
-----
+---
+
+## 自动化平台
+
+| 平台名称 | 官网地址 | 简介 | 免费额度  |
+| --- | --- | --- | --- |
+| n8n | https://n8n.io/ | 目前最强开源替代品，节点式工作流，支持 400+ 集成。 | 自托管版：永久免费，无任务限额；云端版：每月 200 次执行，1 个活动工作流。 |
+| Make | https://www.make.com/ | 以可视化、“无限画布”著称，逻辑处理能力极强，性价比高于 Zapier。 | 每月 1,000 次操作 (Ops)，100MB 数据传输量，支持无限个工作流（但受限于步数）。 |
+| Zapier | https://zapier.com/ | 行业老牌大哥，支持的应用数量最多（6000+），上手最快。 | 每月 100 次任务 (Tasks)，仅支持单步自动化（1 触发 + 1 动作），15 分钟检查频率。 |
+| Activepieces | https://www.activepieces.com/ | AI 时代的新宠，界面极简类似 Zapier，原生支持 AI Agent 编排。 | 自托管版：完全免费，无任务限额；云端版：10 个活动工作流，不限任务数（限速/并发限制）。 |
+| Appsmith | https://www.appsmith.com/ | 侧重内部工具开发，能一键将自动化流程转化为 UI 界面。 | 自托管社区版：完全免费；云端版：不限应用数，每月 20 个人员小时使用时长。 |
+| Windmill | https://www.windmill.dev/ | 极其硬核，支持直接运行 Python/TS 脚本，适合高负载任务。 | 开源版：完全免费；云端版：个人开发者免费使用，支持 10 多个常用节点。 |
+| Huginn | https://github.com/huginn/huginn | 经典的网页监控工具，擅长复杂的 RSS 订阅和数据抓取。 | 完全免费 (仅支持自托管)，性能上限取决于您的服务器配置。 |
+| Node-RED | https://nodered.org/ | IBM 发起，最初用于物联网，现也广泛用于网页 API 联动。 | 完全免费 (开源项目)，无任何商业限额。 |

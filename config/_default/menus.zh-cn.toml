@@ -10,30 +10,26 @@
 # overridden by providing a weight value. The menu will then be
 # ordered by weight from lowest to highest.
 
-[[main]]
-  name = "首页"
-  pageRef = "/"
-  weight = 10
 
 [[main]]
   name = "教程"
   pageRef = "categories/tutorial"
-  weight = 20
+  weight = 10
 
 [[main]]
   name = "资讯"
   pageRef = "categories/tech-news"
-  weight = 30
+  weight = 20
 
 [[main]]
   name = "潮品"
   pageRef = "categories/tech-gadgets"
-  weight = 40
+  weight = 30
 
 [[main]]
   name = "友链"
   pageRef = "links/links"
-  weight = 50
+  weight = 40
 
 
 
