@@ -9,15 +9,15 @@
     <managingEditor>vincentshajing@gmail.com (Vincent Sha)</managingEditor>
     <webMaster>vincentshajing@gmail.com (Vincent Sha)</webMaster>
     <copyright>© 2026 Vincent Sha</copyright>
-    <lastBuildDate>Fri, 26 Dec 2025 16:11:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>你好</title>
-      <link>http://localhost:1313/posts/hello/</link>
-      <pubDate>Fri, 26 Dec 2025 16:11:00 +0800</pubDate>
+      <title>Git 常用命令详解与实用指南</title>
+      <link>http://localhost:1313/posts/git-common-commands-guide/</link>
+      <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
       <author>vincentshajing@gmail.com (Vincent Sha)</author>
-      <guid>http://localhost:1313/posts/hello/</guid>
-      <description>第一篇文章简介</description>
+      <guid>http://localhost:1313/posts/git-common-commands-guide/</guid>
+      <description>本文系统整理了Git的常用命令，包括初始化仓库、配置用户信息、分支管理、代码提交、查看日志、远程操作、文件管理等，帮助用户快速掌握Git版本控制的基本操作与进阶用法，提高代码管理效率。</description>
       
     </item>
     

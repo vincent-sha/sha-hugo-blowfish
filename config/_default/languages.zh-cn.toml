@@ -20,7 +20,7 @@ title = "文森的科技小站"
    links = [
      { x-twitter = "https://x.com/@vincentshaj" },
      { github = "https:/github.com/vincent-sha" },
-     { youtube = "https://www.youtube.com/@vincentsha4819" }
-     {facebook = "https://www.facebook.com/vincent.sha.948" }
-     {reddit = "https://www.reddit.com/user/vincent-s" }
+     { youtube = "https://www.youtube.com/@vincentsha4819" },
+     { facebook = "https://www.facebook.com/vincent.sha.948" },
+     { reddit = "https://www.reddit.com/user/vincent-s" }
    ]
