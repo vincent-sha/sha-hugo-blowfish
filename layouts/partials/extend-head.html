@@ -1,5 +1,29 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5522440282708013"
      crossorigin="anonymous"></script>
+
+<!-- Fix for unique data-oid attributes for dynamically generated posts -->
+<script>
+  // This script runs before other scripts and fixes the data-oid attributes
+  // for dynamically generated posts to ensure unique identification
+  document.addEventListener('DOMContentLoaded', function() {
+    // For pages with data-oid="views_posts/_content.gotmpl", replace with unique path
+    const scripts = document.querySelectorAll('script[data-oid^="views_posts/_content.gotmpl"]');
+    scripts.forEach(function(script) {
+      // Get the page URL to create unique identifier
+      const pageUrl = window.location.pathname.replace(/\/$/, '').replace(/\//g, '-');
+      if (pageUrl && pageUrl !== '-') {
+        const oldOid = script.getAttribute('data-oid');
+        const newOid = 'views' + pageUrl;
+        script.setAttribute('data-oid', newOid);
+        
+        const oldOidLikes = script.getAttribute('data-oid-likes');
+        const newOidLikes = 'likes' + pageUrl;
+        script.setAttribute('data-oid-likes', newOidLikes);
+      }
+    });
+  });
+</script>
+
 <style>
      pre {
           white-space: pre !important;

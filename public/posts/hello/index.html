@@ -289,6 +289,30 @@
   
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5522440282708013"
      crossorigin="anonymous"></script>
+
+
+<script>
+  
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    const scripts = document.querySelectorAll('script[data-oid^="views_posts/_content.gotmpl"]');
+    scripts.forEach(function(script) {
+      
+      const pageUrl = window.location.pathname.replace(/\/$/, '').replace(/\//g, '-');
+      if (pageUrl && pageUrl !== '-') {
+        const oldOid = script.getAttribute('data-oid');
+        const newOid = 'views' + pageUrl;
+        script.setAttribute('data-oid', newOid);
+        
+        const oldOidLikes = script.getAttribute('data-oid-likes');
+        const newOidLikes = 'likes' + pageUrl;
+        script.setAttribute('data-oid-likes', newOidLikes);
+      }
+    });
+  });
+</script>
+
 <style>
      pre {
           white-space: pre !important;
@@ -844,6 +868,8 @@
   
 
   
+    
+  
 
   
 
@@ -857,7 +883,16 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-12-26T16:11:00&#43;08:00">2025-12-26</time><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
+      <time datetime="2025-12-26T16:11:00&#43;08:00">2025-12-26</time><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+
+  
+
+<span
+  id="views_/posts/hello/"
+  class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+  title="views"
+  >loading</span
+>
     
 
     
@@ -1293,6 +1328,8 @@
   
 
   
+    
+  
 
   
 
@@ -1306,7 +1343,16 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-11-02T00:00:00&#43;00:00">2025-11-02</time><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span>
+      <time datetime="2025-11-02T00:00:00&#43;00:00">2025-11-02</time><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+
+  
+
+<span
+  id="views_/posts/git-and-github-introduction-guide/"
+  class="animate-pulse inline-block text-transparent max-h-3 rounded-full -mt-[2px] align-middle bg-neutral-300 dark:bg-neutral-400"
+  title="views"
+  >loading</span
+>
     
 
     
