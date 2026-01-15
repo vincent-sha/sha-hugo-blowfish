@@ -66,7 +66,7 @@
       "featureimage" $featureimage
       "tags" $tags
       "categories" $categories
-      "contentId" (or $itemData.slug .slug)
+      "slug" .slug
     }}
 
     {{ $page := dict
@@ -74,9 +74,9 @@
       "dates" $dates
       "kind" "page"
       "params" $params
-      "path" (or $itemData.slug .slug)
-      "title" (or $itemData.title .title)
-      "summary" (or $itemData.summary $itemData.excerpt $itemData.description)
+      "path" .slug
+      "title" .title
+      "summary" .summary
     }}
     {{ $.AddPage $page }}
   {{ end }}

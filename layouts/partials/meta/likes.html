@@ -5,18 +5,14 @@
   {{ else if eq .Kind "term" }}
     {{ $id = delimit (slice "likes_term_" .Page.Data.Term) "" }}
   {{ else }}
-    {{ if .Params.contentId }}
-      {{ $id = delimit (slice "likes_" .Params.contentId) "" }}
-    {{ else }}
-      {{ $translations := .AllTranslations }}
-      {{ with .File }}
-        {{ $path := .Path }}
-        {{ range $translations }}
-          {{ $lang := print "." .Lang ".md" }}
-          {{ $path = replace $path $lang ".md" }}
-        {{ end }}
-        {{ $id = delimit (slice "likes_" $path) "" }}
+    {{ $translations := .AllTranslations }}
+    {{ with .File }}
+      {{ $path := .Path }}
+      {{ range $translations }}
+        {{ $lang := print "." .Lang ".md" }}
+        {{ $path = replace $path $lang ".md" }}
       {{ end }}
+      {{ $id = delimit (slice "likes_" $path) "" }}
     {{ end }}
   {{ end }}
   <span

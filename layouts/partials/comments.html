@@ -7,7 +7,7 @@
 <!-- 阅读量统计显示 -->
 <div id="article-info" style="margin-bottom: 1.5rem;">
   <span style="color: var(--body-text-color); font-size: 0.95rem;">
-    📖 阅读量: <span class="waline-pageview-count" data-path="{{ .Permalink }}" />
+    📖 阅读量：<span class="waline-pageview-count" data-path="{{ .Params.slug | default .Permalink }}" />
   </span>
 </div>
 

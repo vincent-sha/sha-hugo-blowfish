@@ -5,18 +5,14 @@
   {{ else if eq .Kind "term" }}
     {{ $id = delimit (slice "views_term_" .Page.Data.Term) "" }}
   {{ else }}
-    {{ if .Params.contentId }}
-      {{ $id = delimit (slice "views_" .Params.contentId) "" }}
-    {{ else }}
-      {{ $translations := .AllTranslations }}
-      {{ with .File }}
-        {{ $path := .Path }}
-        {{ range $translations }}
-          {{ $lang := print "." .Lang ".md" }}
-          {{ $path = replace $path $lang ".md" }}
-        {{ end }}
-        {{ $id = delimit (slice "views_" $path) "" }}
+    {{ $translations := .AllTranslations }}
+    {{ with .File }}
+      {{ $path := .Path }}
+      {{ range $translations }}
+        {{ $lang := print "." .Lang ".md" }}
+        {{ $path = replace $path $lang ".md" }}
       {{ end }}
+      {{ $id = delimit (slice "views_" $path) "" }}
     {{ end }}
   {{ end }}
   <span
