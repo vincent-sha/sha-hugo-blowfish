@@ -4,6 +4,13 @@
   href="https://unpkg.com/@waline/client@v3/dist/waline.css"
 />
 
+<!-- 阅读量统计显示 -->
+<div id="article-info" style="margin-bottom: 1.5rem;">
+  <span style="color: var(--body-text-color); font-size: 0.95rem;">
+    📖 阅读量: <span class="waline-pageview-count" data-path="{{ .Permalink }}" />
+  </span>
+</div>
+
 <!-- Waline 容器 -->
 <div id="waline"></div>
 
@@ -15,5 +22,14 @@
     el: '#waline',
     serverURL: 'https://sha-waline.vercel.app',
     locale: 'zh-CN',
+    pageview: true,
+    reaction: [
+      'https://unpkg.com/@waline/emojis@1.1.0/tieba/tieba_agree.png',
+      'https://unpkg.com/@waline/emojis@1.1.0/tieba/tieba_look_down.png',
+      'https://unpkg.com/@waline/emojis@1.1.0/tieba/tieba_sunglasses.png',
+      'https://unpkg.com/@waline/emojis@1.1.0/tieba/tieba_pick_nose.png',
+      'https://unpkg.com/@waline/emojis@1.1.0/tieba/tieba_awkward.png',
+      'https://unpkg.com/@waline/emojis@1.1.0/tieba/tieba_sleep.png',
+    ],
   });
 </script>
