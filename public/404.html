@@ -279,41 +279,11 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5522440282708013"
      crossorigin="anonymous"></script>
 
-
-<script>
-  
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    
-    const scripts = document.querySelectorAll('script[data-oid^="views_posts/_content.gotmpl"]');
-    scripts.forEach(function(script) {
-      
-      const pageUrl = window.location.pathname.replace(/\/$/, '').replace(/\//g, '-');
-      if (pageUrl && pageUrl !== '-') {
-        const oldOid = script.getAttribute('data-oid');
-        const newOid = 'views' + pageUrl;
-        script.setAttribute('data-oid', newOid);
-        
-        const oldOidLikes = script.getAttribute('data-oid-likes');
-        const newOidLikes = 'likes' + pageUrl;
-        script.setAttribute('data-oid-likes', newOidLikes);
-      }
-    });
-  });
-</script>
-
 <style>
      pre {
-          white-space: pre !important;
-          overflow-x: auto !important;
-          word-wrap: normal !important;
+          overflow-x: auto;
      }
 
-     pre code {
-          white-space: pre !important;
-     }
-
-      
      code {
           font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
      }
@@ -334,29 +304,6 @@
   
 
   
-  
-    
-      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-      <script>
-
-    const firebaseConfig = {
-      apiKey: "AIzaSyB6Oo0rYpI7sMXY5oUz8lhwFdfjk09itO4",
-      authDomain: "hugo-blowfish-ea38b.firebaseapp.com",
-      projectId: "hugo-blowfish-ea38b",
-      storageBucket: "hugo-blowfish-ea38b.firebasestorage.app",
-      messagingSenderId: "304940475174",
-      appId: "1:304940475174:web:db67da447497f5e6ed97e7",
-      measurementId: "G-VRKE1MJWEH"
-    };
-
-        var app = firebase.initializeApp(firebaseConfig);
-        var db = firebase.firestore();
-        var auth = firebase.auth();
-
-      </script>
-    
   
 
   

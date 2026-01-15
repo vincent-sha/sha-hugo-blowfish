@@ -66,8 +66,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
 [article]
   showDate = true
-  showViews = true
-  showLikes = true
+  showViews = false
+  showLikes = false
   showDateOnlyInArticle = false
   showDateUpdated = false
   showAuthor = true
@@ -143,7 +143,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   cardView = false
   cardViewScreenWidth = false
 
-[firebase]
+#[firebase]
   apiKey = "AIzaSyB6Oo0rYpI7sMXY5oUz8lhwFdfjk09itO4"
   authDomain = "hugo-blowfish-ea38b.firebaseapp.com"
   projectId = "hugo-blowfish-ea38b"
