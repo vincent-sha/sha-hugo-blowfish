@@ -1558,20 +1558,24 @@
           <div class="pt-3">
             <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
             <div class="pt-3">
-              <script src="https://giscus.app/client.js"
-        data-repo="vincent-sha/sha-hugo-blowfish"
-        data-repo-id="R_kgDOQto2Qw"
-        data-category="General"
-        data-category-id="DIC_kwDOQto2Q84C0hIl"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async>
+              
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+/>
+
+
+<div id="waline"></div>
+
+
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+  init({
+    el: '#waline',
+    serverURL: 'https://sha-waline.vercel.app',
+    locale: 'zh-CN',
+  });
 </script>
             </div>
           </div>
