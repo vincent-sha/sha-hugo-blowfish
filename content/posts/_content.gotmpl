@@ -66,6 +66,7 @@
       "featureimage" $featureimage
       "tags" $tags
       "categories" $categories
+      "contentId" (or $itemData.slug .slug)
     }}
 
     {{ $page := dict
