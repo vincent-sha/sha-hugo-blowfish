@@ -1348,7 +1348,10 @@
 
     </div>
     
-      <div class="prose dark:prose-invert py-1 hidden md:block"></div>
+      <div class="prose dark:prose-invert py-1 hidden md:block">
+        
+        
+      </div>
     
   </div>
   <div class="px-6 pt-4 pb-2"></div>
@@ -1531,7 +1534,10 @@
 
     </div>
     
-      <div class="prose dark:prose-invert py-1 hidden md:block"></div>
+      <div class="prose dark:prose-invert py-1 hidden md:block">
+        
+        
+      </div>
     
   </div>
   <div class="px-6 pt-4 pb-2"></div>
@@ -1724,7 +1730,10 @@
 
     </div>
     
-      <div class="prose dark:prose-invert py-1 hidden md:block"></div>
+      <div class="prose dark:prose-invert py-1 hidden md:block">
+        
+        
+      </div>
     
   </div>
   <div class="px-6 pt-4 pb-2"></div>
@@ -1917,7 +1926,10 @@
 
     </div>
     
-      <div class="prose dark:prose-invert py-1 hidden md:block"></div>
+      <div class="prose dark:prose-invert py-1 hidden md:block">
+        
+        
+      </div>
     
   </div>
   <div class="px-6 pt-4 pb-2"></div>
@@ -2110,7 +2122,10 @@
 
     </div>
     
-      <div class="prose dark:prose-invert py-1 hidden md:block"></div>
+      <div class="prose dark:prose-invert py-1 hidden md:block">
+        
+        
+      </div>
     
   </div>
   <div class="px-6 pt-4 pb-2"></div>
@@ -2303,7 +2318,10 @@
 
     </div>
     
-      <div class="prose dark:prose-invert py-1 hidden md:block"></div>
+      <div class="prose dark:prose-invert py-1 hidden md:block">
+        
+        
+      </div>
     
   </div>
   <div class="px-6 pt-4 pb-2"></div>
@@ -2496,7 +2514,10 @@
 
     </div>
     
-      <div class="prose dark:prose-invert py-1 hidden md:block"></div>
+      <div class="prose dark:prose-invert py-1 hidden md:block">
+        
+        
+      </div>
     
   </div>
   <div class="px-6 pt-4 pb-2"></div>
@@ -2689,7 +2710,10 @@
 
     </div>
     
-      <div class="prose dark:prose-invert py-1 hidden md:block"></div>
+      <div class="prose dark:prose-invert py-1 hidden md:block">
+        
+        
+      </div>
     
   </div>
   <div class="px-6 pt-4 pb-2"></div>
@@ -2882,7 +2906,10 @@
 
     </div>
     
-      <div class="prose dark:prose-invert py-1 hidden md:block"></div>
+      <div class="prose dark:prose-invert py-1 hidden md:block">
+        
+        
+      </div>
     
   </div>
   <div class="px-6 pt-4 pb-2"></div>
@@ -3100,7 +3127,10 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        深入掌握 Swift 6.2 并发编程 # 介绍 # Swift 并发编程已成为 SwiftUI 多线程处理的基石。继 GCD 之后，Swift 并发于 WWDC21 发布，并在 Swift 6.0 版本引入了严格并发、sending关键字及数据竞态安全。2025年 WWDC25 发布的 Swift 6.2 版本带来了“默认 Actor 隔离”（Default Actor Isolation）和新的 nonsending 关键字，进一步简化并发开发。
+本文将从基础讲起，结合最新 Swift 6.2 特性，逐步解析 Swift 并发的核心原理与使用技巧。
+Swift 并发基础 # 线程与隔离 # Swift 支持多线程编程，每个线程拥有独立的调用栈，但共享由 ARC 管理的堆内存。主线程负责 UI 更新，避免 UI 在后台线程被修改。
+
       </div>
     
   </div>
@@ -3298,7 +3328,10 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        Swift 6.2 新功能大详解 # Swift 6.2 作为 Swift 6 的第二个版本，内置于 Xcode 26，带来了标识符字符范围扩展、字符串插值默认值、InlineArray 固定大小数组、新的枚举返回类型遵守 Collection、weak let 弱引用常量、运行时堆栈追踪 Backtrace 结构体，以及并发编程中 nonisolated 异步函数执行行为的调整等多项重要特性。本文详细介绍了这些新特性的用法与示例，助力 Swift 开发者快速掌握。
+1. 标识符字符范围显著扩展 # Swift 6.2 允许在反引号（``）中使用更多随意的字符来定义标识符，支持使用空格或数字作为标识符名。
+func `this is a function`(param: String) -&gt; String { return &#34;Hello, \\(param)&#34; } enum HTTPStatus: String { case `200` = &#34;Success&#34; case `404` = &#34;Not Found&#34; case `500` = &#34;Internal Server Error&#34; } 这种语法使得代码更加灵活，适合动态或特殊命名场景。
+
       </div>
     
   </div>
@@ -3506,7 +3539,10 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        SwiftUI布局结构全面讲解 # SwiftUI的布局结构是其声明式编程范式的核心，允许开发者通过简单的视图组合和修饰符来描述用户界面“应该是什么样子”，而非手动计算位置和尺寸。框架会自动处理渲染、响应式调整（如不同设备屏幕）和动画。这种方法依赖于 View 协议，所有布局组件都符合该协议，并通过 @ViewBuilder属性构建视图层次。布局是分层的：从基本容器开始，逐步嵌套和修改，以创建复杂界面。结合WWDC2025的最新功能（如Liquid Glass设计系统、空间布局支持和自定义布局协议），SwiftUI的布局能力进一步扩展到3D空间、动态材质和高性能自定义场景。下面我将从基础到高级逐步讲解，并融入最新特性。
+布局基础原理：声明式与响应式 # 声明式布局：你定义视图的结构和关系，SwiftUI负责实际布局计算。例如，使用容器视图包裹子视图，框架会根据设备方向、动态类型（字体大小）和环境值（如暗黑模式）自动适应。 关键组件： ViewBuilder：允许在闭包中堆叠多个视图，支持条件（if-else）、循环（ForEach）和分组（Group），自动组合成单一视图树。 修饰符（Modifiers）：链式应用到视图上调整布局，如 .padding()（间距）、.frame()（固定尺寸）、.alignmentGuide()（自定义对齐）。 响应式设计：布局使用 @Environment或**@EnvironmentObject**读取全局值，确保跨平台一致（如iOS到visionOS）。最新更新中，响应式还包括对AppleIntelligence 的集成，支持动态内容调整。 示例（基本响应式布局）：swift
+struct ResponsiveView: View { var body: some View { VStack(alignment: .leading) { Text(&#34;标题&#34;) .font(.title) Text(&#34;内容会根据屏幕自动换行和调整。&#34;) } .padding() .frame(maxWidth: .infinity)// 充满宽度 } } 基本容器视图：线性与叠加布局 # 这些是SwiftUI布局的基石，用于排列子视图。
+
       </div>
     
   </div>
@@ -3714,7 +3750,11 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        SwiftUI简介 # SwiftUI是Apple于2019年WWDC推出的声明式用户界面框架，用于构建 iOS、macOS、watchOS、tvOS和visionOS等Apple平台的应用界面。它完全基于Swift语言，让开发者用更少、更简洁的代码描述“界面应该是什么样子”，框架自动处理布局、更新和动画等细节。
+主要特点 # 声明式编程：你描述最终 UI 状态（“是什么”），而非命令式步骤（“怎么做”）。 实时预览：在Xcode中即时看到界面变化，无需反复编译运行。 跨平台一致：同一套代码可在多个Apple设备上运行，自适应不同屏幕尺寸。 数据驱动：界面自动响应数据变化，减少手动刷新代码。 性能优秀：直接基于Metal渲染，效率高。 截至2026年1月，SwiftUI已非常成熟，支持从iOS13+开始的所有系统，并在最新Xcode（支持iOS18+、visionOS 等）中引入了更多高级特性，如增强的3D空间布局、富文本编辑、自定义控件等，已成为Apple 官方推荐的新App开发首选框架。
+Swift和SwiftUI的相互关系 # Swift和SwiftUI是Apple生态中紧密相关的两个核心技术，但它们本质上扮演不同的角色：
+SwiftUI依赖于Swift：你必须使用Swift语言来编写SwiftUI代码。SwiftUI充分利用了Swift 的高级特性（如@state、Property Wrapper、函数构建器等），这些特性甚至部分是为 SwiftUI “量身定制”的。 Swift不依赖SwiftUI：你可以用Swift编写非UI代码（如命令行工具、后端服务），或结合其他UI框架（如传统的 UIKit）。 开发AppleApp时，通常是“用 Swift 编写代码，来控制和驱动 SwiftUI构建界面”。简单比喻：Swift 是“告诉电脑做什么的语言”，SwiftUI 是“知道怎么画按钮、文本、列表等的工具包”。 SwiftUI入门指南 # 1.环境搭建 # 推荐：Mac电脑+最新Xcode（从AppStore下载，支持SwiftUI实时预览Canvas）。 最低要求：Xcode11+（但建议最新版以获得最佳体验）。 创建项目：在Xcode中选“App”模板，Interface选SwiftUI，LifeCycle选SwiftUI App。 2.第一个程序：Hello World # 创建一个新SwiftUI项目，Xcode会自动生成以下代码：swift
+
       </div>
     
   </div>
@@ -3922,7 +3962,14 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        Xcode快捷键概述 # Xcode 提供了丰富的键盘快捷键，以提升开发效率。这些快捷键基于 macOS 系统（Command 为 ⌘，Option 为 ⌥，Control 为 ⌃，Shift 为 ⇧）。以下是按类别整理的常用快捷键列表，来源于 Apple 文档和开发者社区总结（如 Medium、Reddit 和 Stack Overflow）。我优先列出官方标准快捷键，并标注最常用的一些（基于开发者反馈，如构建、运行和导航类最受欢迎）。
+最常用快捷键 # ⌘ + R：运行项目（Run）
+⌘ + B：构建项目（Build）
+⇧ + ⌘ + O：快速打开文件（Open Quickly）
+⌘ + F：查找（Find）
+⌃ + Space：代码补全（Code Completion）
+⌃ + 空格： 代码补全（Code Completion）
+
       </div>
     
   </div>
@@ -4130,7 +4177,9 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        Swift 编程语言简介 # Swift 是由 Apple 公司于 2014 年推出的现代编程语言，主要用于开发 iOS、macOS、watchOS、tvOS 和 visionOS 等 Apple 平台的应用。它是一种开源、通用、高性能的编译型语言，结合了 C 和 Objective-C 的优点，同时摒弃了旧语言的一些复杂性和兼容性约束。
+主要特点 # 安全：内置类型安全、可选类型（Optionals）避免空指针异常、内存自动管理（ARC），编译时检查数据竞争。 快速：编译为原生代码，性能接近 C++，支持向量化和优化。 表达力强：语法简洁现代，支持函数式编程、泛型、协议导向编程、闭包等。 交互性好：支持 Playground（代码预览），实时查看运行结果，非常适合学习和实验。 跨平台：不仅限于 Apple 生态，还支持 Linux、Windows 和服务器端开发（如 Vapor 框架）。 开源：社区活跃，可与其他语言（如 C++、Java）互操作。 截至 2026 年 1 月，Swift 的最新稳定版本为 Swift 6.2（2025 年 9 月发布），重点提升了并发性能、工具链和跨平台支持。
+
       </div>
     
   </div>
@@ -4338,7 +4387,9 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        Google：2025年12月 AI 更新要点汇总 # 快速概览 # 12 月的主题是把前沿智能从实验室带到日常，重点包括：更快的模型（Gemini 3 Flash）、在 Gemini 应用中增加 AI 验证工具、改进语音与实时翻译、实验性浏览工具（GenTabs / Disco）、面向开发者的 Deep Research 能力开放，以及购物、搜索与回顾类产品的相关扩展。
+详细更新（按主题） # 1) Gemini 3 Flash：极速的前沿智能 # 简介：发布了 Gemini 3 Flash，目标是在保留前沿推理能力的同时显著提升响应速度并降低成本。
+
       </div>
     
   </div>
@@ -4546,7 +4597,10 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        NotebookLM 完整使用指南（2025） # 概述 # NotebookLM 是 Google 推出的知识型 AI 笔记本（2025 年广泛被认为是最有用的免费 AI 工具之一）。它的两大核心能力：
+把各种类型的资料（文档、网页、PDF、图片、音视频、Google 文档/表格/幻灯片等）聚合到同一个笔记本中，并为你做全文索引与分析； 将这些资料直接生成可视化产出（如幻灯片、信息图、报告），或生成音频/视频摘要，支持更易读/分享的输出格式。 适合场景：项目资料整合、课程/自学资料库、研究总结、企业报告、会议材料汇总等。
+如何建立一个笔记本（Step by Step） # 选择目标（Pick a purpose） 为每个独立目标或项目建一个笔记本（例如：工作项目、课程开发、个人兴趣学习）。 示例：作者为 CUNY 新闻学院一个双语硕士在线项目建立了专用笔记本，也为研究作曲家古斯塔夫·马勒建立过笔记本。 查找并添加来源（Find sources） NotebookLM 提供两个检索选项：Fast Research（快速）与 Deep Research（深入）。 Fast Research：30 秒内给出 ~10 篇相关文档，适合快速、精确的素材收集（可从 Google Drive 或网络抓取）。 Deep Research：更慢但能检索更多来源，适合全面调研。 建议：把查询写得尽可能具体，以获得更相关的结果。下面附有作者的一个简洁查询示例（原始示例链接）： 示例查询文档（原文示例）：https://docs.google.com/document/d/1uLwCqpCY8r2yaYuJlmp1pxNFJMGkw2xSFeXxBXE5PWI/edit?usp=sharing 上传你自己的资料（Add your own materials） 支持类型： Google Docs、Slides、Sheets PDF、图像（含手写笔记照片）、Microsoft Word YouTube 链接、音频/视频文件（系统会提取并使用字幕/转录） 网站 URL（会抓取并提取正文文本） 单个文件或资料上限：可上传到 200 MB，最多可包含 500,000 字（以系统提示为准） 免费与 Pro 帐号区别（简表） # 功能 免费账号 Pro（Google AI Pro，约 $20/月） 最多笔记本数量 100 500 每个笔记本可含来源数量 50 300 Deep Research 每月/每日限制 每月可免费运行 10 次 Deep Research 每日可运行 20 次 Deep Research 多媒体生成限制 可能遇到限制（视具体功能而定） 更高配额，支持更多多媒体产出 学生优惠 美国 18 岁以上学生可申请免费 Pro（需通过认证） — 协作与分享 # 类似 Google Docs 的协作权限模型：可邀请他人作为 Viewer（只读）或 Editor（编辑）。 可以控制展示范围：给协作者完整的源文件与笔记访问，或仅开放搜索/聊天界面。 支持公开发布笔记本，示例公开笔记本： Our World in Data — Trends in health, wealth and happiness： https://notebooklm.google.com/notebook/0d5cd576-2583-4835-8848-a5b7b6a97cea The Atlantic — How to build a life： https://notebooklm.google.com/notebook/750a23df-fd98-4954-b9c4-71f16c3ee937 Shakespeare’s Complete Plays： https://notebooklm.google.com/notebook/19bde485-a9c1-4809-8884-e872b2b67b44 Parenting Advice for the Digital Age： https://notebooklm.google.com/notebook/505ee4b1-ad05-4673-a06b-1ec106c2b940 Earnings Reports for the World’s 50 Biggest Companies： https://notebooklm.google.com/notebook/e4ddc6f8-ada2-4aaa-b9dc-c3ff7c325bf8 Secrets of the Super Agers（Eric Topol）： https://notebooklm.google.com/notebook/780a38ee-d0a6-4fb1-b255-aa03c8d67dce 浏览与查询你的资料 # 上传后，NotebookLM 会自动分析并基于已有来源建议“相关问题”。 例如：上传关于马勒的传记材料后，系统可能会建议像“马勒为何改信天主教？”或“哪些诗集影响了马勒？”等查询。 你可以像和智能助手对话一样问任何问题，也可以用传统的搜索查询关键词。 常见操作与实用技巧 # 提问要具体：比起模糊的“讲讲马勒”，更建议使用“马勒在 1900 年至 1910 年间的主要创作动机有哪些？”之类的精确问题。 优先用 Fast Research 做初始资料采集；需要更全面资料再用 Deep Research。 上传多种格式的源文件（尤其是手写笔记的照片或会议录音）能让笔记本成为更完整的知识库。 利用系统生成的可视化输出（幻灯片、信息图、报告等）快速产出可分享的成果，节省二次整理时间。 推荐工作流示例 # 新建笔记本，设置明确目标（例如：为产品发布准备材料）。 用 Fast Research 搜集 10 个高质量来源，筛掉不相关项。 上传内部文档、会议录音、设计稿截图与关键网页链接。 让 NotebookLM 自动分析并生成“关键问题”清单，用以驱动下一步研究。 生成初版幻灯片或报告，交由团队协作者在线编辑与补充。 根据反馈再次运行 Deep Research，补充薄弱环节的资料。 隐私与注意事项 # 上传第三方资料前，请确认有权分享这些内容（尤其是内部保密文件）。 当你公开发布笔记本时，外部用户将能访问包含的源与总结，注意隐私与版权问题。 小结 # NotebookLM 把多来源资料的收集、索引、分析与可视化整合到一个工作流里，极大降低了从“信息”到“产出”的摩擦。无论是学生、自学者、研究员，还是需要管理项目资料的团队，都能通过 NotebookLM 提高效率并快速把知识变成可分享的产品。
+
       </div>
     
   </div>
@@ -4754,7 +4808,12 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        5 款你上线 Meta Quest 后必须先安装的应用 # 虚拟现实头显近年成为非常吸引人的娱乐设备。许多人购买了 Meta Quest 3，把它作为首选的游戏和多媒体平台。但合适的应用能把 Quest 从“游戏机”变成私人影院、生产力工具、健身工作室或冥想静修地。下面是根据实测、用户评分与社区推荐筛选出的五款必装应用，每款都附功能亮点、价格与使用建议，帮助你快速上手并扩展 VR 的用途。
+1. Bigscreen Beta — 社交影院与远程桌面 # 官方页面：https://www.meta.com/en-gb/experiences/bigscreen-beta/2497738113633933/
+简介：Bigscreen Beta 可以把你的 Quest 变成多人社交影院或大型虚拟屏幕。你可以邀请朋友进房间，选择场景（营火、黑暗影院等），一起观看电影、节目或 YouTube。它还支持将 Windows PC 的屏幕远程投射到头显，等于是把电脑桌面搬到 VR 中。
+亮点：
+支持最多约 12 人的社交房间，共同观影与聊天。 内置 Cloud Browser（可在 VR 中直接浏览网页与播放媒体）。 远程桌面流式传输：可以在虚拟大屏上玩 PC 游戏或播放本地 3D/高码率视频。 注意事项：
+
       </div>
     
   </div>

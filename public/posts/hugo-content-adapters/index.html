@@ -73,7 +73,9 @@
   <meta property="og:url" content="http://localhost:1313/posts/hugo-content-adapters/">
   <meta property="og:site_name" content="文森的科技小站">
   <meta property="og:title" content="Hugo 动态内容的利器——Content Adapters">
-  <meta property="og:description" content="文森的科技小站。">
+  <meta property="og:description" content="Hugo 内容适配器（Content adapters） # 内容适配器用于在构建站点时动态创建页面。常用于从远程 JSON/TOML/YAML/XML 等数据源生成页面（新增于 v0.126.0）。
+概览 # 内容适配器是模板类型的一种，但它们位于 content 目录，而不是 layouts。 每个目录（每种语言）最多一个内容适配器，命名为 _content.gotmpl（或带语言后缀的 _content.&lt;lang&gt;.gotmpl）。 内容适配器创建的页面的逻辑路径（logical path）相对于内容适配器所在目录。 示例目录结构：
+content/ ├── articles/ │ ├── _index.md │ ├── article-1.md │ └── article-2.md ├── books/ │ ├── _content.gotmpl &lt;-- content adapter │ └── _index.md └── films/ ├── _content.gotmpl &lt;-- content adapter └── _index.md 内容适配器使用与 layouts 模板相同的语法和函数，可在模板内调用下列方法来创建页面和资源。">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -86,7 +88,9 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Hugo 动态内容的利器——Content Adapters">
-  <meta name="twitter:description" content="文森的科技小站。">
+  <meta name="twitter:description" content="Hugo 内容适配器（Content adapters） # 内容适配器用于在构建站点时动态创建页面。常用于从远程 JSON/TOML/YAML/XML 等数据源生成页面（新增于 v0.126.0）。
+概览 # 内容适配器是模板类型的一种，但它们位于 content 目录，而不是 layouts。 每个目录（每种语言）最多一个内容适配器，命名为 _content.gotmpl（或带语言后缀的 _content.&lt;lang&gt;.gotmpl）。 内容适配器创建的页面的逻辑路径（logical path）相对于内容适配器所在目录。 示例目录结构：
+content/ ├── articles/ │ ├── _index.md │ ├── article-1.md │ └── article-2.md ├── books/ │ ├── _content.gotmpl &lt;-- content adapter │ └── _index.md └── films/ ├── _content.gotmpl &lt;-- content adapter └── _index.md 内容适配器使用与 layouts 模板相同的语法和函数，可在模板内调用下列方法来创建页面和资源。">
 
   
   

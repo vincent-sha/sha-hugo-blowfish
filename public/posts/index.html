@@ -1002,7 +1002,14 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        Xcode快捷键概述 # Xcode 提供了丰富的键盘快捷键，以提升开发效率。这些快捷键基于 macOS 系统（Command 为 ⌘，Option 为 ⌥，Control 为 ⌃，Shift 为 ⇧）。以下是按类别整理的常用快捷键列表，来源于 Apple 文档和开发者社区总结（如 Medium、Reddit 和 Stack Overflow）。我优先列出官方标准快捷键，并标注最常用的一些（基于开发者反馈，如构建、运行和导航类最受欢迎）。
+最常用快捷键 # ⌘ + R：运行项目（Run）
+⌘ + B：构建项目（Build）
+⇧ + ⌘ + O：快速打开文件（Open Quickly）
+⌘ + F：查找（Find）
+⌃ + Space：代码补全（Code Completion）
+⌃ + 空格： 代码补全（Code Completion）
+
       </div>
     
   </div>
@@ -1210,7 +1217,11 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        SwiftUI简介 # SwiftUI是Apple于2019年WWDC推出的声明式用户界面框架，用于构建 iOS、macOS、watchOS、tvOS和visionOS等Apple平台的应用界面。它完全基于Swift语言，让开发者用更少、更简洁的代码描述“界面应该是什么样子”，框架自动处理布局、更新和动画等细节。
+主要特点 # 声明式编程：你描述最终 UI 状态（“是什么”），而非命令式步骤（“怎么做”）。 实时预览：在Xcode中即时看到界面变化，无需反复编译运行。 跨平台一致：同一套代码可在多个Apple设备上运行，自适应不同屏幕尺寸。 数据驱动：界面自动响应数据变化，减少手动刷新代码。 性能优秀：直接基于Metal渲染，效率高。 截至2026年1月，SwiftUI已非常成熟，支持从iOS13+开始的所有系统，并在最新Xcode（支持iOS18+、visionOS 等）中引入了更多高级特性，如增强的3D空间布局、富文本编辑、自定义控件等，已成为Apple 官方推荐的新App开发首选框架。
+Swift和SwiftUI的相互关系 # Swift和SwiftUI是Apple生态中紧密相关的两个核心技术，但它们本质上扮演不同的角色：
+SwiftUI依赖于Swift：你必须使用Swift语言来编写SwiftUI代码。SwiftUI充分利用了Swift 的高级特性（如@state、Property Wrapper、函数构建器等），这些特性甚至部分是为 SwiftUI “量身定制”的。 Swift不依赖SwiftUI：你可以用Swift编写非UI代码（如命令行工具、后端服务），或结合其他UI框架（如传统的 UIKit）。 开发AppleApp时，通常是“用 Swift 编写代码，来控制和驱动 SwiftUI构建界面”。简单比喻：Swift 是“告诉电脑做什么的语言”，SwiftUI 是“知道怎么画按钮、文本、列表等的工具包”。 SwiftUI入门指南 # 1.环境搭建 # 推荐：Mac电脑+最新Xcode（从AppStore下载，支持SwiftUI实时预览Canvas）。 最低要求：Xcode11+（但建议最新版以获得最佳体验）。 创建项目：在Xcode中选“App”模板，Interface选SwiftUI，LifeCycle选SwiftUI App。 2.第一个程序：Hello World # 创建一个新SwiftUI项目，Xcode会自动生成以下代码：swift
+
       </div>
     
   </div>
@@ -1418,7 +1429,10 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        SwiftUI布局结构全面讲解 # SwiftUI的布局结构是其声明式编程范式的核心，允许开发者通过简单的视图组合和修饰符来描述用户界面“应该是什么样子”，而非手动计算位置和尺寸。框架会自动处理渲染、响应式调整（如不同设备屏幕）和动画。这种方法依赖于 View 协议，所有布局组件都符合该协议，并通过 @ViewBuilder属性构建视图层次。布局是分层的：从基本容器开始，逐步嵌套和修改，以创建复杂界面。结合WWDC2025的最新功能（如Liquid Glass设计系统、空间布局支持和自定义布局协议），SwiftUI的布局能力进一步扩展到3D空间、动态材质和高性能自定义场景。下面我将从基础到高级逐步讲解，并融入最新特性。
+布局基础原理：声明式与响应式 # 声明式布局：你定义视图的结构和关系，SwiftUI负责实际布局计算。例如，使用容器视图包裹子视图，框架会根据设备方向、动态类型（字体大小）和环境值（如暗黑模式）自动适应。 关键组件： ViewBuilder：允许在闭包中堆叠多个视图，支持条件（if-else）、循环（ForEach）和分组（Group），自动组合成单一视图树。 修饰符（Modifiers）：链式应用到视图上调整布局，如 .padding()（间距）、.frame()（固定尺寸）、.alignmentGuide()（自定义对齐）。 响应式设计：布局使用 @Environment或**@EnvironmentObject**读取全局值，确保跨平台一致（如iOS到visionOS）。最新更新中，响应式还包括对AppleIntelligence 的集成，支持动态内容调整。 示例（基本响应式布局）：swift
+struct ResponsiveView: View { var body: some View { VStack(alignment: .leading) { Text(&#34;标题&#34;) .font(.title) Text(&#34;内容会根据屏幕自动换行和调整。&#34;) } .padding() .frame(maxWidth: .infinity)// 充满宽度 } } 基本容器视图：线性与叠加布局 # 这些是SwiftUI布局的基石，用于排列子视图。
+
       </div>
     
   </div>
@@ -1616,7 +1630,10 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        Swift 6.2 新功能大详解 # Swift 6.2 作为 Swift 6 的第二个版本，内置于 Xcode 26，带来了标识符字符范围扩展、字符串插值默认值、InlineArray 固定大小数组、新的枚举返回类型遵守 Collection、weak let 弱引用常量、运行时堆栈追踪 Backtrace 结构体，以及并发编程中 nonisolated 异步函数执行行为的调整等多项重要特性。本文详细介绍了这些新特性的用法与示例，助力 Swift 开发者快速掌握。
+1. 标识符字符范围显著扩展 # Swift 6.2 允许在反引号（``）中使用更多随意的字符来定义标识符，支持使用空格或数字作为标识符名。
+func `this is a function`(param: String) -&gt; String { return &#34;Hello, \\(param)&#34; } enum HTTPStatus: String { case `200` = &#34;Success&#34; case `404` = &#34;Not Found&#34; case `500` = &#34;Internal Server Error&#34; } 这种语法使得代码更加灵活，适合动态或特殊命名场景。
+
       </div>
     
   </div>
@@ -1824,7 +1841,10 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        深入掌握 Swift 6.2 并发编程 # 介绍 # Swift 并发编程已成为 SwiftUI 多线程处理的基石。继 GCD 之后，Swift 并发于 WWDC21 发布，并在 Swift 6.0 版本引入了严格并发、sending关键字及数据竞态安全。2025年 WWDC25 发布的 Swift 6.2 版本带来了“默认 Actor 隔离”（Default Actor Isolation）和新的 nonsending 关键字，进一步简化并发开发。
+本文将从基础讲起，结合最新 Swift 6.2 特性，逐步解析 Swift 并发的核心原理与使用技巧。
+Swift 并发基础 # 线程与隔离 # Swift 支持多线程编程，每个线程拥有独立的调用栈，但共享由 ARC 管理的堆内存。主线程负责 UI 更新，避免 UI 在后台线程被修改。
+
       </div>
     
   </div>
@@ -2032,7 +2052,9 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        Swift 编程语言简介 # Swift 是由 Apple 公司于 2014 年推出的现代编程语言，主要用于开发 iOS、macOS、watchOS、tvOS 和 visionOS 等 Apple 平台的应用。它是一种开源、通用、高性能的编译型语言，结合了 C 和 Objective-C 的优点，同时摒弃了旧语言的一些复杂性和兼容性约束。
+主要特点 # 安全：内置类型安全、可选类型（Optionals）避免空指针异常、内存自动管理（ARC），编译时检查数据竞争。 快速：编译为原生代码，性能接近 C++，支持向量化和优化。 表达力强：语法简洁现代，支持函数式编程、泛型、协议导向编程、闭包等。 交互性好：支持 Playground（代码预览），实时查看运行结果，非常适合学习和实验。 跨平台：不仅限于 Apple 生态，还支持 Linux、Windows 和服务器端开发（如 Vapor 框架）。 开源：社区活跃，可与其他语言（如 C++、Java）互操作。 截至 2026 年 1 月，Swift 的最新稳定版本为 Swift 6.2（2025 年 9 月发布），重点提升了并发性能、工具链和跨平台支持。
+
       </div>
     
   </div>
@@ -2240,7 +2262,10 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        NotebookLM 完整使用指南（2025） # 概述 # NotebookLM 是 Google 推出的知识型 AI 笔记本（2025 年广泛被认为是最有用的免费 AI 工具之一）。它的两大核心能力：
+把各种类型的资料（文档、网页、PDF、图片、音视频、Google 文档/表格/幻灯片等）聚合到同一个笔记本中，并为你做全文索引与分析； 将这些资料直接生成可视化产出（如幻灯片、信息图、报告），或生成音频/视频摘要，支持更易读/分享的输出格式。 适合场景：项目资料整合、课程/自学资料库、研究总结、企业报告、会议材料汇总等。
+如何建立一个笔记本（Step by Step） # 选择目标（Pick a purpose） 为每个独立目标或项目建一个笔记本（例如：工作项目、课程开发、个人兴趣学习）。 示例：作者为 CUNY 新闻学院一个双语硕士在线项目建立了专用笔记本，也为研究作曲家古斯塔夫·马勒建立过笔记本。 查找并添加来源（Find sources） NotebookLM 提供两个检索选项：Fast Research（快速）与 Deep Research（深入）。 Fast Research：30 秒内给出 ~10 篇相关文档，适合快速、精确的素材收集（可从 Google Drive 或网络抓取）。 Deep Research：更慢但能检索更多来源，适合全面调研。 建议：把查询写得尽可能具体，以获得更相关的结果。下面附有作者的一个简洁查询示例（原始示例链接）： 示例查询文档（原文示例）：https://docs.google.com/document/d/1uLwCqpCY8r2yaYuJlmp1pxNFJMGkw2xSFeXxBXE5PWI/edit?usp=sharing 上传你自己的资料（Add your own materials） 支持类型： Google Docs、Slides、Sheets PDF、图像（含手写笔记照片）、Microsoft Word YouTube 链接、音频/视频文件（系统会提取并使用字幕/转录） 网站 URL（会抓取并提取正文文本） 单个文件或资料上限：可上传到 200 MB，最多可包含 500,000 字（以系统提示为准） 免费与 Pro 帐号区别（简表） # 功能 免费账号 Pro（Google AI Pro，约 $20/月） 最多笔记本数量 100 500 每个笔记本可含来源数量 50 300 Deep Research 每月/每日限制 每月可免费运行 10 次 Deep Research 每日可运行 20 次 Deep Research 多媒体生成限制 可能遇到限制（视具体功能而定） 更高配额，支持更多多媒体产出 学生优惠 美国 18 岁以上学生可申请免费 Pro（需通过认证） — 协作与分享 # 类似 Google Docs 的协作权限模型：可邀请他人作为 Viewer（只读）或 Editor（编辑）。 可以控制展示范围：给协作者完整的源文件与笔记访问，或仅开放搜索/聊天界面。 支持公开发布笔记本，示例公开笔记本： Our World in Data — Trends in health, wealth and happiness： https://notebooklm.google.com/notebook/0d5cd576-2583-4835-8848-a5b7b6a97cea The Atlantic — How to build a life： https://notebooklm.google.com/notebook/750a23df-fd98-4954-b9c4-71f16c3ee937 Shakespeare’s Complete Plays： https://notebooklm.google.com/notebook/19bde485-a9c1-4809-8884-e872b2b67b44 Parenting Advice for the Digital Age： https://notebooklm.google.com/notebook/505ee4b1-ad05-4673-a06b-1ec106c2b940 Earnings Reports for the World’s 50 Biggest Companies： https://notebooklm.google.com/notebook/e4ddc6f8-ada2-4aaa-b9dc-c3ff7c325bf8 Secrets of the Super Agers（Eric Topol）： https://notebooklm.google.com/notebook/780a38ee-d0a6-4fb1-b255-aa03c8d67dce 浏览与查询你的资料 # 上传后，NotebookLM 会自动分析并基于已有来源建议“相关问题”。 例如：上传关于马勒的传记材料后，系统可能会建议像“马勒为何改信天主教？”或“哪些诗集影响了马勒？”等查询。 你可以像和智能助手对话一样问任何问题，也可以用传统的搜索查询关键词。 常见操作与实用技巧 # 提问要具体：比起模糊的“讲讲马勒”，更建议使用“马勒在 1900 年至 1910 年间的主要创作动机有哪些？”之类的精确问题。 优先用 Fast Research 做初始资料采集；需要更全面资料再用 Deep Research。 上传多种格式的源文件（尤其是手写笔记的照片或会议录音）能让笔记本成为更完整的知识库。 利用系统生成的可视化输出（幻灯片、信息图、报告等）快速产出可分享的成果，节省二次整理时间。 推荐工作流示例 # 新建笔记本，设置明确目标（例如：为产品发布准备材料）。 用 Fast Research 搜集 10 个高质量来源，筛掉不相关项。 上传内部文档、会议录音、设计稿截图与关键网页链接。 让 NotebookLM 自动分析并生成“关键问题”清单，用以驱动下一步研究。 生成初版幻灯片或报告，交由团队协作者在线编辑与补充。 根据反馈再次运行 Deep Research，补充薄弱环节的资料。 隐私与注意事项 # 上传第三方资料前，请确认有权分享这些内容（尤其是内部保密文件）。 当你公开发布笔记本时，外部用户将能访问包含的源与总结，注意隐私与版权问题。 小结 # NotebookLM 把多来源资料的收集、索引、分析与可视化整合到一个工作流里，极大降低了从“信息”到“产出”的摩擦。无论是学生、自学者、研究员，还是需要管理项目资料的团队，都能通过 NotebookLM 提高效率并快速把知识变成可分享的产品。
+
       </div>
     
   </div>
@@ -2448,7 +2473,9 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        Google：2025年12月 AI 更新要点汇总 # 快速概览 # 12 月的主题是把前沿智能从实验室带到日常，重点包括：更快的模型（Gemini 3 Flash）、在 Gemini 应用中增加 AI 验证工具、改进语音与实时翻译、实验性浏览工具（GenTabs / Disco）、面向开发者的 Deep Research 能力开放，以及购物、搜索与回顾类产品的相关扩展。
+详细更新（按主题） # 1) Gemini 3 Flash：极速的前沿智能 # 简介：发布了 Gemini 3 Flash，目标是在保留前沿推理能力的同时显著提升响应速度并降低成本。
+
       </div>
     
   </div>
@@ -2666,7 +2693,9 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        Steam Frame、Apple Vision Pro 与 Meta Quest 3 对比：性能与游戏体验谁更强？ # 快速导读：Valve 新公布的 Steam Frame 主打流式体验并兼容整个 Steam 库；Apple Vision Pro 则以更高分辨率与 AR 能力为主；Meta Quest 3 以亲民价格和独立可玩性领先。下面给出详细规格对比与购买建议。
+一、三款头显一览（主要规格对比） # 项目 Steam Frame (Valve) Apple Vision Pro (M5) Meta Quest 3 处理器 Snapdragon 8 Gen 3 (4 nm, ARM64) Apple M5 Snapdragon XR2 Gen 2 内存 16 GB Unified LPDDR5X 16 GB 8 GB 存储 256GB / 1TB UFS，microSD 扩展 256GB / 512GB / 1TB 512GB 单眼分辨率 2160 × 2160 3660 × 3200 2064 × 2208 刷新率 72–144 Hz（144Hz 实验性） 90 / 96 / 100 / 120 Hz 72 / 90 / 120 Hz 电池 / 使用时间 21.6 Wh (电池容量) 一般使用约 2.5 小时 / 视频播放可达 3 小时 19.44 Wh 视场角 (FOV) 最高约 110° 约 100° 110° 水平 / 96° 垂直 眼动追踪 有 有 无 彩色透视 仅单色透视摄像头 彩色透视，支持 AR/MR 彩色透视，支持 AR/MR 价格 未公布（目标低于 $1000） $3,499 $499.99 注：Steam Frame 预计于 2026 年初发售；Valve 宣称该设备以“流式为主”的体验为核心，并兼容 Steam 平台上 VR 与非 VR 游戏。
+
       </div>
     
   </div>
@@ -2874,7 +2903,12 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        5 款你上线 Meta Quest 后必须先安装的应用 # 虚拟现实头显近年成为非常吸引人的娱乐设备。许多人购买了 Meta Quest 3，把它作为首选的游戏和多媒体平台。但合适的应用能把 Quest 从“游戏机”变成私人影院、生产力工具、健身工作室或冥想静修地。下面是根据实测、用户评分与社区推荐筛选出的五款必装应用，每款都附功能亮点、价格与使用建议，帮助你快速上手并扩展 VR 的用途。
+1. Bigscreen Beta — 社交影院与远程桌面 # 官方页面：https://www.meta.com/en-gb/experiences/bigscreen-beta/2497738113633933/
+简介：Bigscreen Beta 可以把你的 Quest 变成多人社交影院或大型虚拟屏幕。你可以邀请朋友进房间，选择场景（营火、黑暗影院等），一起观看电影、节目或 YouTube。它还支持将 Windows PC 的屏幕远程投射到头显，等于是把电脑桌面搬到 VR 中。
+亮点：
+支持最多约 12 人的社交房间，共同观影与聊天。 内置 Cloud Browser（可在 VR 中直接浏览网页与播放媒体）。 远程桌面流式传输：可以在虚拟大屏上玩 PC 游戏或播放本地 3D/高码率视频。 注意事项：
+
       </div>
     
   </div>
@@ -3089,7 +3123,10 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        2025 年最具影响力的开源项目 # GitHub Universe 2025 的 Open Source Zone 汇聚了许多令人振奋的开源项目——它们展示了创意、工程实力与“我得试试这个”的演示。本篇笔记整理并改写了大会上展示的 12 个优秀项目：介绍要点、起源故事、趣闻与相关链接，便于你快速了解与参与。
+目录
+Appwrite：简化后端 GoReleaser：Go 的发布自动化 Homebrew：macOS 必备包管理器 Ladybird：敢为人先的浏览器 Moondream：小体量视觉 AI Oh My Zsh：为 Shell 加速 OpenCV：计算机视觉核心库 Open Source Project Security Baseline (OSPSB)：提升安全基线 p5.js 与 Processing：创意编程入门 PixiJS：网页 2D 图形引擎 SparkJS：将 Gaussian Splatting 带入 3D 网页 Zulip：可扩展的主题化讨论 Appwrite：简化后端 # 官网：appwrite.io 简介：Appwrite 是一个开源后端即服务（BaaS）平台，提供数据库、认证、存储等 API，帮助 Web 与移动开发者减少样板代码、快速交付。 起源：由 Eldad Fux 在 2019 年以副业项目开始，迅速成长为 GitHub 上增长最快的开发者平台之一，拥有超过 50,000 ⭐ 与数百名贡献者。 小贴士：如果你希望在短时间里把后端功能接入前端应用，Appwrite 是一个值得尝试的开源选项。
+
       </div>
     
   </div>
@@ -3297,7 +3334,11 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        SonicJS # 一个现代的、TypeScript优先的无头CMS，专为Cloudflare边缘平台和Hono.js构建。
+📦 快速开始：
+npx create-sonicjs@latest my-app ⚠️ 注意： 本仓库用于开发SonicJS核心包。构建应用请使用上述命令创建新项目。
+🚀 主要特性 # 核心平台 # ⚡ 边缘优先：专为Cloudflare Workers设计，全球低延迟 🔧 开发者友好：配置优先，TypeScript优先策略 🤖 AI友好：结构化代码，支持AI辅助开发 🔌 插件系统：无需修改核心即可扩展 📱 现代技术栈：Hono.js、TypeScript、D1数据库、R2存储、HTMX 🚀 高速轻量：针对边缘计算优化 高级内容管理（阶段5） # 📝 集成TinyMCE的富文本编辑器，支持自定义工具栏 🎛️ 动态字段类型（文本、数字、日期、布尔、选择、媒体） 📚 完整的内容版本控制及恢复功能 ⏰ 内容发布/撤销时间调度 🔄 支持基于角色权限的工作流（草稿→审核→发布→归档） 💾 自动保存（每30秒） 👁️ 实时内容预览 📋 内容一键复制与模板支持 🛡️ XSS防护，输入验证和HTML转义 🛠 技术栈 # 核心框架 # Hono.js：超快的Cloudflare Workers Web框架 TypeScript：严格类型安全 HTMX：增强HTML动态交互 Cloudflare服务 # D1：边缘SQLite数据库 R2：媒体对象存储 Workers：无服务器计算 KV：缓存键值存储 Images API：图片优化与转换 开发工具 # Vitest：快速单元测试 Playwright：端到端测试 Wrangler：本地开发与部署 Drizzle ORM：类型安全数据库查询 🏁 快速开始 # 快速部署SonicJS流程 # # 1.本地创建新项目 npx create-sonicjs@latest my-app # 2.进入项目目录 cd my-app # 3.登录cloudflare npx wrangler login # 4.创建 D1 数据库（记录下database_id)： npx wrangler d1 create my-sonicjs-db # 5.创建 R2 存储桶（用于存放上传的图片/文件）： npx wrangler r2 bucket create my-sonicjs-media # 修改配置文件 (wrangler.toml) [[d1_databases]] binding = &#34;DB&#34; database_name = &#34;my-sonicjs-db&#34; # 你创建的名字 database_id = &#34;xxxx-xxxx-xxxx&#34; # 刚才创建后生成的 ID [[r2_buckets]] binding = &#34;MEDIA_BUCKET&#34; bucket_name = &#34;my-sonicjs-media&#34; # 你创建的桶名字 **# 核心步骤：执行数据库迁移（初始化表结构）** npm run db:migrate # 启动开发服务器 npm run dev # 访问 &lt;http://localhost:8787&gt; **# 核心步骤：同步到远程数据库D1** npm run db:migrate -- --remote # 部署到cloudflare npm run deploy 备注：如遇到无法新增和保存内容，请执行以下步骤
+
       </div>
     
   </div>
@@ -3505,7 +3546,10 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        Hugo 内容适配器（Content adapters） # 内容适配器用于在构建站点时动态创建页面。常用于从远程 JSON/TOML/YAML/XML 等数据源生成页面（新增于 v0.126.0）。
+概览 # 内容适配器是模板类型的一种，但它们位于 content 目录，而不是 layouts。 每个目录（每种语言）最多一个内容适配器，命名为 _content.gotmpl（或带语言后缀的 _content.&lt;lang&gt;.gotmpl）。 内容适配器创建的页面的逻辑路径（logical path）相对于内容适配器所在目录。 示例目录结构：
+content/ ├── articles/ │ ├── _index.md │ ├── article-1.md │ └── article-2.md ├── books/ │ ├── _content.gotmpl &lt;-- content adapter │ └── _index.md └── films/ ├── _content.gotmpl &lt;-- content adapter └── _index.md 内容适配器使用与 layouts 模板相同的语法和函数，可在模板内调用下列方法来创建页面和资源。
+
       </div>
     
   </div>
@@ -3703,7 +3747,9 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        Git 常用命令详解与实用指南 # 本文总结了Git的核心命令，涵盖从初始化仓库到远程协作的各个方面，帮助你高效管理代码版本。
+初始化与配置 # # 初始化本地Git仓库 git init # 配置全局用户名和邮箱 git config --global user.name &#34;你的用户名&#34; git config --global user.email &#34;你的邮箱&#34; # 启用命令输出颜色，提升可读性 git config --global color.ui true git config --global color.status auto git config --global color.diff auto git config --global color.branch auto git config --global color.interactive auto # 取消HTTP代理设置 git config --global --unset http.proxy 克隆与远程仓库操作 # # 克隆远程仓库 git clone git+ssh://git@192.168.53.168/VT.git # 添加远程仓库地址 git remote add origin git+ssh://git@192.168.53.168/VT.git # 查看远程仓库分支 git branch -r # 获取远程分支数据（不自动合并） git fetch git fetch --prune # 同时清理远程已删除分支 # 拉取远程分支并合并到当前分支 git pull origin master # 推送当前分支到远程仓库 git push origin master # 推送所有标签 git push --tags # 删除远程分支 git push origin :hotfixes/BJVEP933 版本状态查看与文件管理 # # 查看当前仓库状态 git status # 将文件添加到暂存区 git add xyz git add . # 添加当前目录所有变更文件 # 提交改动 git commit -m &#39;提交信息&#39; # 修改上一次提交信息 git commit --amend -m &#39;新的提交信息&#39; # 一步完成添加并提交（仅限已跟踪文件） git commit -am &#39;提交信息&#39; # 删除文件（同时从暂存区和工作区删除） git rm 文件名 # 递归删除当前目录所有文件 git rm -r * # 重命名文件 git mv README README2 # 查看Git索引包含的文件 git ls-files 日志查看与版本比较 # # 显示提交日志 git log # 显示最近1条日志 git log -1 # 显示最近5条日志 git log -5 # 显示日志及相关文件变动统计 git log --stat # 显示详细的提交差异 git log -p -m # 查看指定提交的详细信息 git show dfb02e6 # 查看最新提交 git show HEAD # 查看上一个版本提交 git show HEAD^ # 查看标签信息 git tag git tag -a v2.0 -m &#39;版本说明&#39; # 创建带注释的标签 # 查看标签的提交信息 git show v2.0 # 查看标签的日志 git log v2.0 # 显示未暂存的文件差异 git diff # 显示已暂存但未提交的变更 git diff --cached # 比较与上一个版本的差异 git diff HEAD^ # 比较指定目录的差异 git diff HEAD -- ./lib # 比较远程分支与本地分支差异 git diff origin/master..master # 只显示差异文件列表，不显示内容 git diff origin/master..master --stat 分支管理 # # 查看本地分支 git branch # 查看所有本地和远程分支 git branch -a # 显示所有远程分支 git branch -r # 显示包含特定提交的分支 git branch --contains 50089 # 显示已合并到当前分支的分支 git branch --merged # 显示未合并到当前分支的分支 git branch --no-merged # 本地分支重命名 git branch -m master master_copy # 创建并切换到新分支 git checkout -b master_copy # 从远程分支创建本地新分支并切换 git checkout -b devel origin/develop # 切换到已有分支 git checkout features/performance # 检出远程分支并建立跟踪 git checkout --track hotfixes/BJVEP933 # 切换到标签版本 git checkout v2.0 # 删除本地分支（已合并） git branch -d hotfixes/BJVEP933 # 强制删除本地分支（未合并） git branch -D hotfixes/BJVEP933 合并与变基 # # 合并远程master分支到当前分支 git merge origin/master # 选择性合并某次提交 git cherry-pick ff44785404a8e # 变基操作 git rebase 重置与回滚 # # 硬重置到HEAD版本（丢弃未提交修改） git reset --hard HEAD # 撤销指定提交的影响（生成新提交） git revert dfb02e6e4f2f7b573337763e5c0013802e392818 # 检出某个文件回到HEAD版本（恢复文件） git checkout -- README 暂存区操作（stash） # # 暂存当前修改，恢复工作区为HEAD状态 git stash # 查看暂存列表 git stash list # 显示某次暂存内容 git stash show -p stash@{0} # 应用某次暂存内容 git stash apply stash@{0} 其他实用命令 # # 搜索文件内容包含&#34;delete from&#34;的文本 git grep &#34;delete from&#34; # 使用多个条件搜索 git grep -e &#39;#define&#39; --and -e SORT_DIRENT # 垃圾回收，优化仓库空间 git gc # 检查仓库完整性 git fsck # 查看分支历史图示 git show-branch git show-branch --all # 查看提交历史对应的文件修改 git whatchanged # 查看所有提交记录（包括孤立提交） git reflog # 查看HEAD@{5}的状态 git show HEAD@{5} # 查看master分支昨天的状态 git show master@{yesterday} # 图示日志简洁视图 git log --pretty=format:&#39;%h %s&#39; --graph # 查看特定提交的原始详细信息 git show -s --pretty=raw 2be7fcb476 通过熟练掌握以上Git命令，可以极大提高代码管理效率，轻松应对团队协作中的各种版本控制需求。
+
       </div>
     
   </div>
@@ -3911,7 +3957,8 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        Hugo 安装 giscus 评论系统教程 # 主流评论系统横向比较 # 评论系统 免费度 隐私保护 易用性 Hugo 集成方式 主要优缺点 Disqus 免费（基础版），付费高级功能 中等（第三方服务器，广告追踪） 高（简单 JS 嵌入） JS 嵌入或短代码 优点：用户基数大，功能丰富（如通知）；缺点：隐私差，加载慢，广告多。 Utterances 完全免费 高（GitHub 托管，无追踪） 中等（需 GitHub repo） JS 嵌入或短代码 优点：开源，轻量，版本控制；缺点：需 GitHub 账号，回复依赖 GitHub。 giscus 完全免费 高（GitHub Discussions 托管） 高（配置简单） JS 嵌入或短代码 优点：实时通知，主题自定义，支持多语言；缺点：依赖 GitHub，搜索功能有限。 Remark42 完全免费（自托管） 高（自托管，无第三方） 低（需服务器） JS 嵌入，自托管后端 优点：完全控制数据，轻量；缺点：部署复杂，需维护服务器。 Staticman 完全免费（自托管） 高（静态提交，无 JS） 中等（Webhook 配置） 短代码 + Webhook 优点：无 JS，SEO 友好；缺点：非实时，需后端处理表单。 数据来源：基于 Hugo 官方文档和社区推荐（2025 年最新）。选择评论系统时，建议优先考虑隐私需求和站点规模。
+
       </div>
     
   </div>
@@ -4119,7 +4166,10 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        Hugo安装教程（WIN11系统） # 在Windows系统上安装Hugo非常简单，这里主要介绍用Chocolatey包管理器安装的方法，因为这种方法最适合开发者，因为它可以一键安装，并且方便后续的升级和管理。
+Chocolatey简介 # Chocolatey（简称 Choco）是一个开源的Windows 包管理器，类似于 Linux 的 apt-get/yum 或 macOS 的 Homebrew。它通过命令行方式自动化管理 Windows 上的软件安装、更新、配置和卸载，基于 NuGet 包格式和 PowerShell 脚本实现。
+安装Chocolatey（如果您还没有安装） # 以管理员身份打开Windows PowerShell（右键点击开始菜单的PowerShell图标，选择“以管理员身份运行”）。 复制以下命令并粘贴到PowerShell中，然后按回车： Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://community.chocolatey.org/install.ps1&#39;)) 安装后，验证。
+
       </div>
     
   </div>
@@ -4317,7 +4367,9 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        Hugo 模块（Hugo Modules）使用指南 # Hugo 模块（Hugo Modules）简介 # Hugo Modules 是 Hugo（静态网站生成器）从 v0.56.0 版本引入的依赖管理机制，基于 Go Modules 实现，主要用于管理主题（themes）、组件、内容、资产等外部依赖。相比传统的 Git submodules 或手动复制主题文件，Hugo Modules 的安装和使用有以下主要优点：
+**更简单的依赖管理和更新。**Hugo 自动处理依赖的下载、版本跟踪和文件集成。只需在配置文件（如 hugo.toml）中声明 imports，运行 hugo mod get 或直接构建站点即可自动拉取和更新。无需手动执行 git submodule update 等复杂命令，避免了 submodules 常见的克隆、更新和同步问题。 **干净的项目结构。**主题和依赖不会直接污染站点仓库的 themes 目录（无需物理文件夹），保持站点仓库简洁。只有 go.mod 和 go.sum 文件记录依赖，便于版本控制和协作。适合多人开发或开源项目。 **精确的版本控制和可复现性。**使用 Go Modules 的语义化版本管理（semantic versioning），可以锁定特定版本，确保不同环境构建一致。更新时只需 hugo mod get -u 或指定版本，避免 submodules 的 detached HEAD 或手动 commit 问题。 **灵活的挂载（mounts）和组件复用。**支持将外部模块的任意组件（layouts、assets、content、data 等）挂载到站点任意路径，实现高度模块化。便于复用组件、共享内容或构建复杂站点，而非仅限于主题。 **自动缓存和性能优化。**模块缓存到本地（默认 ~/go/pkg/mod），后续构建更快。支持代理和 workspace 模式，适合大型项目或 CI/CD 部署（如 Netlify、Vercel）。 避免 Git submodules 的痛点 无需特殊克隆命令（如 &ndash;recurse-submodules）。 更容易自定义主题（通过 replacements 支持本地开发）。 减少手动操作错误，提高开发效率和迭代速度。 1. 前提条件 # 需要安装 Go 1.18 及以上版本 需要安装 Git 对于在 Netlify 上托管的旧网站，确保环境变量 GO_VERSION 设置为 1.18 或更高版本。 2. 初始化新模块 # 使用命令初始化新的 Hugo 模块：
+
       </div>
     
   </div>
@@ -4515,7 +4567,9 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        Hugo Gallery 主题：简单而实用的 Hugo 照片画廊主题 # Hugo Gallery 是一个非常简单且具有明确设计理念的 Hugo 照片画廊主题，适合想要快速搭建美观相册网站的用户。
+主题演示地址：Demo 示例站点源码：Example site source 主要特点 # 响应式设计，兼容各种设备 支持暗色配色方案，可为每个页面单独设置 支持私密相册，不在公开列表中展示 利用 Flickr 的 Justified Layout 实现整齐的相册视图 集成 PhotoSwipe 轻盒子查看图片 SEO 优化，支持 Open Graph 标签 自动或手动选择封面图作为相册缩略图 重要提示： 请避免使用 WebP 格式图片。因 Hugo 内置的 Go 语言 WebP 实现存在缩放时色阶错误的 bug，导致图片颜色暗淡。详见相关问题讨论。
+
       </div>
     
   </div>
@@ -4723,7 +4777,13 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        Git与GitHub入门指南 # Git是一款分布式版本控制软件，用于记录代码的历史变更，支持多分支开发和远程协作。本文将带你从零开始了解Git的基本概念、优势、常用命令及工作流程，并介绍GitHub平台如何助力团队协作。
+Git和GitHub基本概念 # Git简介 # Git是一种分布式版本控制系统，意味着每个开发者本地都有完整的仓库副本，包括所有提交、分支和文件。与集中式版本控制不同，Git允许离线操作并提供更强的灵活性。
+分支轻量且易创建，支持大量分支并行开发 通过SHA哈希存储变更，适合文本文件版本管理，不适合大二进制文件 支持本地和远程仓库连接，方便推送（push）和拉取（pull）代码 Git核心组件由C语言、Shell脚本、Perl和Tcl编写，源代码托管在GitHub的git/git仓库。
+GitHub简介 # GitHub是基于Git的协作平台，支持拉取请求、代码评审、集成测试等功能，极大提升团队开发效率。开发者通常在本地使用Git进行开发，通过GitHub进行远程协作。
+学习Git与GitHub的最佳实践课程推荐GitHub学习实验室。
+为什么使用Git？ # 使用版本控制可以有效防止代码丢失，Git具有以下显著优势：
+
       </div>
     
   </div>
@@ -4931,7 +4991,10 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        Cloudflare托管Hugo网站完整指南 # 简介 # 本文将指导您如何将基于Hugo构建的静态网站托管到Cloudflare上，并实现从GitHub仓库的持续自动部署。即使您使用的是GitLab，步骤也大同小异。
+前提条件 # 在开始之前，请确保完成以下准备工作：
+注册并登录您的 Cloudflare账户。 注册并登录您的 GitHub账户。 在GitHub上为您的项目创建一个新的仓库。 在本地创建Git仓库，并添加远程地址指向GitHub仓库。 在本地Git仓库中创建Hugo站点，并使用 hugo server 命令测试站点是否正常运行。 官方操作步骤 # 1. 创建 wrangler.toml 配置文件 # 在项目根目录创建名为 wrangler.toml 的文件，内容如下：
+
       </div>
     
   </div>
@@ -5139,7 +5202,10 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        Hugo 快速入门指南（Mac平台） # 简介 # Hugo 是一个流行的静态网站生成器，能够帮助用户快速创建高性能的网站。本文将引导你在几分钟内搭建一个 Hugo 网站。
+前提条件 # 安装 Homebrew # 打开 Terminal（终端），输入以下命令：
+/bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34; 验证 Homebrew 安装成功
+
       </div>
     
   </div>
@@ -5337,7 +5403,11 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        Hugo 目录结构详解 # 目录结构概述 # Hugo 是一个流行的静态网站生成器，每个 Hugo 项目是一个目录，包含多个子目录，这些子目录共同决定了网站的内容、结构、行为和展示方式。
+站点骨架 # 使用以下命令创建新站点时，Hugo 会生成如下骨架目录结构：
+hugo new site my-site 生成的目录结构示例：
+my-site/ ├── archetypes/ # 内容模板目录 │ └── default.md ├── assets/ # 静态资源，如图片、Sass、JS等 ├── content/ # 网站内容，通常为Markdown文件 ├── data/ # 数据文件，如JSON、TOML、YAML ├── i18n/ # 多语言翻译文件 ├── layouts/ # 模板文件 ├── static/ # 静态文件，如favicon.ico、robots.txt ├── themes/ # 主题文件 └── hugo.toml # 站点配置文件 可选的配置目录结构 # 对于需求更复杂的项目，可以将配置拆分为子目录：
+
       </div>
     
   </div>

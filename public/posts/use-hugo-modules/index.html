@@ -73,7 +73,8 @@
   <meta property="og:url" content="http://localhost:1313/posts/use-hugo-modules/">
   <meta property="og:site_name" content="文森的科技小站">
   <meta property="og:title" content="Hugo 模块使用指南">
-  <meta property="og:description" content="文森的科技小站。">
+  <meta property="og:description" content="Hugo 模块（Hugo Modules）使用指南 # Hugo 模块（Hugo Modules）简介 # Hugo Modules 是 Hugo（静态网站生成器）从 v0.56.0 版本引入的依赖管理机制，基于 Go Modules 实现，主要用于管理主题（themes）、组件、内容、资产等外部依赖。相比传统的 Git submodules 或手动复制主题文件，Hugo Modules 的安装和使用有以下主要优点：
+**更简单的依赖管理和更新。**Hugo 自动处理依赖的下载、版本跟踪和文件集成。只需在配置文件（如 hugo.toml）中声明 imports，运行 hugo mod get 或直接构建站点即可自动拉取和更新。无需手动执行 git submodule update 等复杂命令，避免了 submodules 常见的克隆、更新和同步问题。 **干净的项目结构。**主题和依赖不会直接污染站点仓库的 themes 目录（无需物理文件夹），保持站点仓库简洁。只有 go.mod 和 go.sum 文件记录依赖，便于版本控制和协作。适合多人开发或开源项目。 **精确的版本控制和可复现性。**使用 Go Modules 的语义化版本管理（semantic versioning），可以锁定特定版本，确保不同环境构建一致。更新时只需 hugo mod get -u 或指定版本，避免 submodules 的 detached HEAD 或手动 commit 问题。 **灵活的挂载（mounts）和组件复用。**支持将外部模块的任意组件（layouts、assets、content、data 等）挂载到站点任意路径，实现高度模块化。便于复用组件、共享内容或构建复杂站点，而非仅限于主题。 **自动缓存和性能优化。**模块缓存到本地（默认 ~/go/pkg/mod），后续构建更快。支持代理和 workspace 模式，适合大型项目或 CI/CD 部署（如 Netlify、Vercel）。 避免 Git submodules 的痛点 无需特殊克隆命令（如 –recurse-submodules）。 更容易自定义主题（通过 replacements 支持本地开发）。 减少手动操作错误，提高开发效率和迭代速度。 1. 前提条件 # 需要安装 Go 1.18 及以上版本 需要安装 Git 对于在 Netlify 上托管的旧网站，确保环境变量 GO_VERSION 设置为 1.18 或更高版本。 2. 初始化新模块 # 使用命令初始化新的 Hugo 模块：">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -85,7 +86,8 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Hugo 模块使用指南">
-  <meta name="twitter:description" content="文森的科技小站。">
+  <meta name="twitter:description" content="Hugo 模块（Hugo Modules）使用指南 # Hugo 模块（Hugo Modules）简介 # Hugo Modules 是 Hugo（静态网站生成器）从 v0.56.0 版本引入的依赖管理机制，基于 Go Modules 实现，主要用于管理主题（themes）、组件、内容、资产等外部依赖。相比传统的 Git submodules 或手动复制主题文件，Hugo Modules 的安装和使用有以下主要优点：
+**更简单的依赖管理和更新。**Hugo 自动处理依赖的下载、版本跟踪和文件集成。只需在配置文件（如 hugo.toml）中声明 imports，运行 hugo mod get 或直接构建站点即可自动拉取和更新。无需手动执行 git submodule update 等复杂命令，避免了 submodules 常见的克隆、更新和同步问题。 **干净的项目结构。**主题和依赖不会直接污染站点仓库的 themes 目录（无需物理文件夹），保持站点仓库简洁。只有 go.mod 和 go.sum 文件记录依赖，便于版本控制和协作。适合多人开发或开源项目。 **精确的版本控制和可复现性。**使用 Go Modules 的语义化版本管理（semantic versioning），可以锁定特定版本，确保不同环境构建一致。更新时只需 hugo mod get -u 或指定版本，避免 submodules 的 detached HEAD 或手动 commit 问题。 **灵活的挂载（mounts）和组件复用。**支持将外部模块的任意组件（layouts、assets、content、data 等）挂载到站点任意路径，实现高度模块化。便于复用组件、共享内容或构建复杂站点，而非仅限于主题。 **自动缓存和性能优化。**模块缓存到本地（默认 ~/go/pkg/mod），后续构建更快。支持代理和 workspace 模式，适合大型项目或 CI/CD 部署（如 Netlify、Vercel）。 避免 Git submodules 的痛点 无需特殊克隆命令（如 –recurse-submodules）。 更容易自定义主题（通过 replacements 支持本地开发）。 减少手动操作错误，提高开发效率和迭代速度。 1. 前提条件 # 需要安装 Go 1.18 及以上版本 需要安装 Git 对于在 Netlify 上托管的旧网站，确保环境变量 GO_VERSION 设置为 1.18 或更高版本。 2. 初始化新模块 # 使用命令初始化新的 Hugo 模块：">
 
   
   

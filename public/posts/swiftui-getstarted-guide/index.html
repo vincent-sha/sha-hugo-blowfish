@@ -73,7 +73,10 @@
   <meta property="og:url" content="http://localhost:1313/posts/swiftui-getstarted-guide/">
   <meta property="og:site_name" content="文森的科技小站">
   <meta property="og:title" content="SwiftUI入门指南">
-  <meta property="og:description" content="文森的科技小站。">
+  <meta property="og:description" content="SwiftUI简介 # SwiftUI是Apple于2019年WWDC推出的声明式用户界面框架，用于构建 iOS、macOS、watchOS、tvOS和visionOS等Apple平台的应用界面。它完全基于Swift语言，让开发者用更少、更简洁的代码描述“界面应该是什么样子”，框架自动处理布局、更新和动画等细节。
+主要特点 # 声明式编程：你描述最终 UI 状态（“是什么”），而非命令式步骤（“怎么做”）。 实时预览：在Xcode中即时看到界面变化，无需反复编译运行。 跨平台一致：同一套代码可在多个Apple设备上运行，自适应不同屏幕尺寸。 数据驱动：界面自动响应数据变化，减少手动刷新代码。 性能优秀：直接基于Metal渲染，效率高。 截至2026年1月，SwiftUI已非常成熟，支持从iOS13&#43;开始的所有系统，并在最新Xcode（支持iOS18&#43;、visionOS 等）中引入了更多高级特性，如增强的3D空间布局、富文本编辑、自定义控件等，已成为Apple 官方推荐的新App开发首选框架。
+Swift和SwiftUI的相互关系 # Swift和SwiftUI是Apple生态中紧密相关的两个核心技术，但它们本质上扮演不同的角色：
+SwiftUI依赖于Swift：你必须使用Swift语言来编写SwiftUI代码。SwiftUI充分利用了Swift 的高级特性（如@state、Property Wrapper、函数构建器等），这些特性甚至部分是为 SwiftUI “量身定制”的。 Swift不依赖SwiftUI：你可以用Swift编写非UI代码（如命令行工具、后端服务），或结合其他UI框架（如传统的 UIKit）。 开发AppleApp时，通常是“用 Swift 编写代码，来控制和驱动 SwiftUI构建界面”。简单比喻：Swift 是“告诉电脑做什么的语言”，SwiftUI 是“知道怎么画按钮、文本、列表等的工具包”。 SwiftUI入门指南 # 1.环境搭建 # 推荐：Mac电脑&#43;最新Xcode（从AppStore下载，支持SwiftUI实时预览Canvas）。 最低要求：Xcode11&#43;（但建议最新版以获得最佳体验）。 创建项目：在Xcode中选“App”模板，Interface选SwiftUI，LifeCycle选SwiftUI App。 2.第一个程序：Hello World # 创建一个新SwiftUI项目，Xcode会自动生成以下代码：swift">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -86,7 +89,10 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="SwiftUI入门指南">
-  <meta name="twitter:description" content="文森的科技小站。">
+  <meta name="twitter:description" content="SwiftUI简介 # SwiftUI是Apple于2019年WWDC推出的声明式用户界面框架，用于构建 iOS、macOS、watchOS、tvOS和visionOS等Apple平台的应用界面。它完全基于Swift语言，让开发者用更少、更简洁的代码描述“界面应该是什么样子”，框架自动处理布局、更新和动画等细节。
+主要特点 # 声明式编程：你描述最终 UI 状态（“是什么”），而非命令式步骤（“怎么做”）。 实时预览：在Xcode中即时看到界面变化，无需反复编译运行。 跨平台一致：同一套代码可在多个Apple设备上运行，自适应不同屏幕尺寸。 数据驱动：界面自动响应数据变化，减少手动刷新代码。 性能优秀：直接基于Metal渲染，效率高。 截至2026年1月，SwiftUI已非常成熟，支持从iOS13&#43;开始的所有系统，并在最新Xcode（支持iOS18&#43;、visionOS 等）中引入了更多高级特性，如增强的3D空间布局、富文本编辑、自定义控件等，已成为Apple 官方推荐的新App开发首选框架。
+Swift和SwiftUI的相互关系 # Swift和SwiftUI是Apple生态中紧密相关的两个核心技术，但它们本质上扮演不同的角色：
+SwiftUI依赖于Swift：你必须使用Swift语言来编写SwiftUI代码。SwiftUI充分利用了Swift 的高级特性（如@state、Property Wrapper、函数构建器等），这些特性甚至部分是为 SwiftUI “量身定制”的。 Swift不依赖SwiftUI：你可以用Swift编写非UI代码（如命令行工具、后端服务），或结合其他UI框架（如传统的 UIKit）。 开发AppleApp时，通常是“用 Swift 编写代码，来控制和驱动 SwiftUI构建界面”。简单比喻：Swift 是“告诉电脑做什么的语言”，SwiftUI 是“知道怎么画按钮、文本、列表等的工具包”。 SwiftUI入门指南 # 1.环境搭建 # 推荐：Mac电脑&#43;最新Xcode（从AppStore下载，支持SwiftUI实时预览Canvas）。 最低要求：Xcode11&#43;（但建议最新版以获得最佳体验）。 创建项目：在Xcode中选“App”模板，Interface选SwiftUI，LifeCycle选SwiftUI App。 2.第一个程序：Hello World # 创建一个新SwiftUI项目，Xcode会自动生成以下代码：swift">
 
   
   

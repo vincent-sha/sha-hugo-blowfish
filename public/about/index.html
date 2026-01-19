@@ -917,7 +917,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <span title="预计阅读">1 分钟</span>
+      <span title="预计阅读">2 分钟</span>
     
 
     
@@ -953,7 +953,9 @@
     </div>
     
       <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
-        
+        个人介绍 # 大家好，我是文森（Vincent-SHA)，这是一个轻量型的科技站点，以最快速的静态网站系统 Hugo 构建。本网站主要热衷于关注各类科技资讯和产品新闻；搜刮各种免费资源、免费部署的开源项目；研究各种低成本创业项目。本网站主要是交流学到的各种有用无用的知识，希望能找到志同道合者一起研究如何创业。
+主要内容（皮毛知识） # 搜刮各种开源的免费资源，传播技术小白都可以看懂的技术教程，关注最新的科技资讯。 静态站点：Hugo、notionNext Hugo静态网站入门指南 2025-10-30&middot;3 分钟 技术教程 Hugo 入门 静态网站 Hugo 快速入门指南（Mac平台） # 简介 # Hugo 是一个流行的静态网站生成器，能够帮助用户快速创建高性能的网站。本文将引导你在几分钟内搭建一个 Hugo 网站。 前提条件 # 安装 Homebrew # 打开 Terminal（终端），输入以下命令： /bin/bash -c &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&#34; 验证 Homebrew 安装成功 Headless CMS：SonicJS、Stripa、Decap CMS 开源后端SonicJS部署指南 2025-12-06&middot;4 分钟 技术教程 后端 SonicJs 入门 SonicJS # 一个现代的、TypeScript优先的无头CMS，专为Cloudflare边缘平台和Hono.js构建。 📦 快速开始： npx create-sonicjs@latest my-app ⚠️ 注意： 本仓库用于开发SonicJS核心包。构建应用请使用上述命令创建新项目。 🚀 主要特性 # 核心平台 # ⚡ 边缘优先：专为Cloudflare Workers设计，全球低延迟 🔧 开发者友好：配置优先，TypeScript优先策略 🤖 AI友好：结构化代码，支持AI辅助开发 🔌 插件系统：无需修改核心即可扩展 📱 现代技术栈：Hono.js、TypeScript、D1数据库、R2存储、HTMX 🚀 高速轻量：针对边缘计算优化 高级内容管理（阶段5） # 📝 集成TinyMCE的富文本编辑器，支持自定义工具栏 🎛️ 动态字段类型（文本、数字、日期、布尔、选择、媒体） 📚 完整的内容版本控制及恢复功能 ⏰ 内容发布/撤销时间调度 🔄 支持基于角色权限的工作流（草稿→审核→发布→归档） 💾 自动保存（每30秒） 👁️ 实时内容预览 📋 内容一键复制与模板支持 🛡️ XSS防护，输入验证和HTML转义 🛠 技术栈 # 核心框架 # Hono.js：超快的Cloudflare Workers Web框架 TypeScript：严格类型安全 HTMX：增强HTML动态交互 Cloudflare服务 # D1：边缘SQLite数据库 R2：媒体对象存储 Workers：无服务器计算 KV：缓存键值存储 Images API：图片优化与转换 开发工具 # Vitest：快速单元测试 Playwright：端到端测试 Wrangler：本地开发与部署 Drizzle ORM：类型安全数据库查询 🏁 快速开始 # 快速部署SonicJS流程 # # 1.本地创建新项目 npx create-sonicjs@latest my-app # 2.进入项目目录 cd my-app # 3.登录cloudflare npx wrangler login # 4.创建 D1 数据库（记录下database_id)： npx wrangler d1 create my-sonicjs-db # 5.创建 R2 存储桶（用于存放上传的图片/文件）： npx wrangler r2 bucket create my-sonicjs-media # 修改配置文件 (wrangler.toml) [[d1_databases]] binding = &#34;DB&#34; database_name = &#34;my-sonicjs-db&#34; # 你创建的名字 database_id = &#34;xxxx-xxxx-xxxx&#34; # 刚才创建后生成的 ID [[r2_buckets]] binding = &#34;MEDIA_BUCKET&#34; bucket_name = &#34;my-sonicjs-media&#34; # 你创建的桶名字 **# 核心步骤：执行数据库迁移（初始化表结构）** npm run db:migrate # 启动开发服务器 npm run dev # 访问 &lt;http://localhost:8787&gt; **# 核心步骤：同步到远程数据库D1** npm run db:migrate -- --remote # 部署到cloudflare npm run deploy 备注：如遇到无法新增和保存内容，请执行以下步骤 部署平台：Cloudflare 自动化平台：Make 移动端应用：Swift 联系方式 &amp; 社交 # 电子邮件：vincentshajing@gmail.com 主页社交： GitHub: https://github.com/vincent-sha X/Twitter: https://x.com/@vincentshaj YouTube: https://www.youtube.com/@vincentsha4819 想了解更多？欢迎在文章下方留言或通过社交联系我 — 我会尽力回复并分享有用的资源。
+
       </div>
     
   </div>

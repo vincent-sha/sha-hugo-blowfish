@@ -73,7 +73,9 @@
   <meta property="og:url" content="http://localhost:1313/posts/swift-6-2-new-features-xcode26/">
   <meta property="og:site_name" content="文森的科技小站">
   <meta property="og:title" content="Swift 6.2 新功能大详解">
-  <meta property="og:description" content="文森的科技小站。">
+  <meta property="og:description" content="Swift 6.2 新功能大详解 # Swift 6.2 作为 Swift 6 的第二个版本，内置于 Xcode 26，带来了标识符字符范围扩展、字符串插值默认值、InlineArray 固定大小数组、新的枚举返回类型遵守 Collection、weak let 弱引用常量、运行时堆栈追踪 Backtrace 结构体，以及并发编程中 nonisolated 异步函数执行行为的调整等多项重要特性。本文详细介绍了这些新特性的用法与示例，助力 Swift 开发者快速掌握。
+1. 标识符字符范围显著扩展 # Swift 6.2 允许在反引号（``）中使用更多随意的字符来定义标识符，支持使用空格或数字作为标识符名。
+func `this is a function`(param: String) -&gt; String { return &#34;Hello, \\(param)&#34; } enum HTTPStatus: String { case `200` = &#34;Success&#34; case `404` = &#34;Not Found&#34; case `500` = &#34;Internal Server Error&#34; } 这种语法使得代码更加灵活，适合动态或特殊命名场景。">
   <meta property="og:locale" content="zh_cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -85,7 +87,9 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Swift 6.2 新功能大详解">
-  <meta name="twitter:description" content="文森的科技小站。">
+  <meta name="twitter:description" content="Swift 6.2 新功能大详解 # Swift 6.2 作为 Swift 6 的第二个版本，内置于 Xcode 26，带来了标识符字符范围扩展、字符串插值默认值、InlineArray 固定大小数组、新的枚举返回类型遵守 Collection、weak let 弱引用常量、运行时堆栈追踪 Backtrace 结构体，以及并发编程中 nonisolated 异步函数执行行为的调整等多项重要特性。本文详细介绍了这些新特性的用法与示例，助力 Swift 开发者快速掌握。
+1. 标识符字符范围显著扩展 # Swift 6.2 允许在反引号（``）中使用更多随意的字符来定义标识符，支持使用空格或数字作为标识符名。
+func `this is a function`(param: String) -&gt; String { return &#34;Hello, \\(param)&#34; } enum HTTPStatus: String { case `200` = &#34;Success&#34; case `404` = &#34;Not Found&#34; case `500` = &#34;Internal Server Error&#34; } 这种语法使得代码更加灵活，适合动态或特殊命名场景。">
 
   
   
