@@ -6,16 +6,16 @@
     <description>Recent content in 标签 on 文森的科技小站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <managingEditor>vincentshajing@gmail.com (Vincent Sha)</managingEditor>
-    <webMaster>vincentshajing@gmail.com (Vincent Sha)</webMaster>
-    <copyright>© 2026 Vincent Sha</copyright>
+    <managingEditor>vincentshajing@gmail.com</managingEditor>
+    <webMaster>vincentshajing@gmail.com</webMaster>
+    <copyright>© 2026 </copyright>
     <lastBuildDate>Sun, 04 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Swift</title>
       <link>http://localhost:1313/tags/swift/</link>
       <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/swift/</guid>
       <description></description>
       
@@ -25,7 +25,7 @@
       <title>Swift6.2</title>
       <link>http://localhost:1313/tags/swift6.2/</link>
       <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/swift6.2/</guid>
       <description></description>
       
@@ -35,7 +35,7 @@
       <title>SwiftUI</title>
       <link>http://localhost:1313/tags/swiftui/</link>
       <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/swiftui/</guid>
       <description></description>
       
@@ -45,7 +45,7 @@
       <title>Xcode</title>
       <link>http://localhost:1313/tags/xcode/</link>
       <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/xcode/</guid>
       <description></description>
       
@@ -55,7 +55,7 @@
       <title>并发</title>
       <link>http://localhost:1313/tags/%E5%B9%B6%E5%8F%91/</link>
       <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/%E5%B9%B6%E5%8F%91/</guid>
       <description></description>
       
@@ -65,7 +65,7 @@
       <title>布局</title>
       <link>http://localhost:1313/tags/%E5%B8%83%E5%B1%80/</link>
       <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/%E5%B8%83%E5%B1%80/</guid>
       <description></description>
       
@@ -75,7 +75,7 @@
       <title>快捷键</title>
       <link>http://localhost:1313/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
       <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
       <description></description>
       
@@ -85,7 +85,7 @@
       <title>入门</title>
       <link>http://localhost:1313/tags/%E5%85%A5%E9%97%A8/</link>
       <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/%E5%85%A5%E9%97%A8/</guid>
       <description></description>
       
@@ -95,7 +95,7 @@
       <title>编程</title>
       <link>http://localhost:1313/tags/%E7%BC%96%E7%A8%8B/</link>
       <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/%E7%BC%96%E7%A8%8B/</guid>
       <description></description>
       
@@ -105,7 +105,7 @@
       <title>AI</title>
       <link>http://localhost:1313/tags/ai/</link>
       <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/ai/</guid>
       <description></description>
       
@@ -115,7 +115,7 @@
       <title>Google</title>
       <link>http://localhost:1313/tags/google/</link>
       <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/google/</guid>
       <description></description>
       
@@ -125,7 +125,7 @@
       <title>NotebookLM</title>
       <link>http://localhost:1313/tags/notebooklm/</link>
       <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/notebooklm/</guid>
       <description></description>
       
@@ -135,7 +135,7 @@
       <title>更新</title>
       <link>http://localhost:1313/tags/%E6%9B%B4%E6%96%B0/</link>
       <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/%E6%9B%B4%E6%96%B0/</guid>
       <description></description>
       
@@ -145,7 +145,7 @@
       <title>教程</title>
       <link>http://localhost:1313/tags/%E6%95%99%E7%A8%8B/</link>
       <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/%E6%95%99%E7%A8%8B/</guid>
       <description></description>
       
@@ -155,7 +155,7 @@
       <title>指南</title>
       <link>http://localhost:1313/tags/%E6%8C%87%E5%8D%97/</link>
       <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/%E6%8C%87%E5%8D%97/</guid>
       <description></description>
       
@@ -165,7 +165,7 @@
       <title>Meta</title>
       <link>http://localhost:1313/tags/meta/</link>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/meta/</guid>
       <description></description>
       
@@ -175,7 +175,7 @@
       <title>Quest3</title>
       <link>http://localhost:1313/tags/quest3/</link>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/quest3/</guid>
       <description></description>
       
@@ -185,7 +185,7 @@
       <title>Steam Frame</title>
       <link>http://localhost:1313/tags/steam-frame/</link>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/steam-frame/</guid>
       <description></description>
       
@@ -195,7 +195,7 @@
       <title>Vision Pro</title>
       <link>http://localhost:1313/tags/vision-pro/</link>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/vision-pro/</guid>
       <description></description>
       
@@ -205,7 +205,7 @@
       <title>Vr</title>
       <link>http://localhost:1313/tags/vr/</link>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/vr/</guid>
       <description></description>
       
@@ -215,7 +215,7 @@
       <title>2025</title>
       <link>http://localhost:1313/tags/2025/</link>
       <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/2025/</guid>
       <description></description>
       
@@ -225,7 +225,7 @@
       <title>Github</title>
       <link>http://localhost:1313/tags/github/</link>
       <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/github/</guid>
       <description></description>
       
@@ -235,7 +235,7 @@
       <title>Open Source</title>
       <link>http://localhost:1313/tags/open-source/</link>
       <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/open-source/</guid>
       <description></description>
       
@@ -245,7 +245,7 @@
       <title>SonicJs</title>
       <link>http://localhost:1313/tags/sonicjs/</link>
       <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/sonicjs/</guid>
       <description></description>
       
@@ -255,7 +255,7 @@
       <title>后端</title>
       <link>http://localhost:1313/tags/%E5%90%8E%E7%AB%AF/</link>
       <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/%E5%90%8E%E7%AB%AF/</guid>
       <description></description>
       
@@ -265,7 +265,7 @@
       <title>CMS</title>
       <link>http://localhost:1313/tags/cms/</link>
       <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/cms/</guid>
       <description></description>
       
@@ -275,7 +275,7 @@
       <title>Hugo</title>
       <link>http://localhost:1313/tags/hugo/</link>
       <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/hugo/</guid>
       <description></description>
       
@@ -285,7 +285,7 @@
       <title>进阶</title>
       <link>http://localhost:1313/tags/%E8%BF%9B%E9%98%B6/</link>
       <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/%E8%BF%9B%E9%98%B6/</guid>
       <description></description>
       
@@ -295,7 +295,7 @@
       <title>Git</title>
       <link>http://localhost:1313/tags/git/</link>
       <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/git/</guid>
       <description></description>
       
@@ -305,7 +305,7 @@
       <title>Comment</title>
       <link>http://localhost:1313/tags/comment/</link>
       <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/comment/</guid>
       <description></description>
       
@@ -315,7 +315,7 @@
       <title>Giscus</title>
       <link>http://localhost:1313/tags/giscus/</link>
       <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/giscus/</guid>
       <description></description>
       
@@ -325,7 +325,7 @@
       <title>Win</title>
       <link>http://localhost:1313/tags/win/</link>
       <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/win/</guid>
       <description></description>
       
@@ -335,7 +335,7 @@
       <title>安装</title>
       <link>http://localhost:1313/tags/%E5%AE%89%E8%A3%85/</link>
       <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/%E5%AE%89%E8%A3%85/</guid>
       <description></description>
       
@@ -345,7 +345,7 @@
       <title>主题</title>
       <link>http://localhost:1313/tags/%E4%B8%BB%E9%A2%98/</link>
       <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/%E4%B8%BB%E9%A2%98/</guid>
       <description></description>
       
@@ -355,7 +355,7 @@
       <title>Cloudflare</title>
       <link>http://localhost:1313/tags/cloudflare/</link>
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/cloudflare/</guid>
       <description></description>
       
@@ -365,7 +365,7 @@
       <title>部署</title>
       <link>http://localhost:1313/tags/%E9%83%A8%E7%BD%B2/</link>
       <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/%E9%83%A8%E7%BD%B2/</guid>
       <description></description>
       
@@ -375,7 +375,7 @@
       <title>静态网站</title>
       <link>http://localhost:1313/tags/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</link>
       <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</guid>
       <description></description>
       
@@ -385,7 +385,7 @@
       <title>目录结构</title>
       <link>http://localhost:1313/tags/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/</link>
       <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/tags/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/</guid>
       <description></description>
       

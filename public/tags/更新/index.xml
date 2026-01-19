@@ -6,16 +6,16 @@
     <description>Recent content in 更新 on 文森的科技小站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <managingEditor>vincentshajing@gmail.com (Vincent Sha)</managingEditor>
-    <webMaster>vincentshajing@gmail.com (Vincent Sha)</webMaster>
-    <copyright>© 2026 Vincent Sha</copyright>
+    <managingEditor>vincentshajing@gmail.com</managingEditor>
+    <webMaster>vincentshajing@gmail.com</webMaster>
+    <copyright>© 2026 </copyright>
     <lastBuildDate>Fri, 02 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%9B%B4%E6%96%B0/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Google：2025年12月 AI 更新要点汇总</title>
       <link>http://localhost:1313/posts/google-ai-updates-december-2025/</link>
       <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/posts/google-ai-updates-december-2025/</guid>
       <description>&lt;h2 class=&#34;relative group&#34;&gt;Google：2025年12月 AI 更新要点汇总&#xA;    &lt;div id=&#34;google2025年12月-ai-更新要点汇总&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#google2025%e5%b9%b412%e6%9c%88-ai-%e6%9b%b4%e6%96%b0%e8%a6%81%e7%82%b9%e6%b1%87%e6%80%bb&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&#xA;&lt;h3 class=&#34;relative group&#34;&gt;快速概览&#xA;    &lt;div id=&#34;快速概览&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#%e5%bf%ab%e9%80%9f%e6%a6%82%e8%a7%88&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h3&gt;&#xA;&lt;p&gt;12 月的主题是把前沿智能从实验室带到日常，重点包括：更快的模型（Gemini 3 Flash）、在 Gemini 应用中增加 AI 验证工具、改进语音与实时翻译、实验性浏览工具（GenTabs / Disco）、面向开发者的 Deep Research 能力开放，以及购物、搜索与回顾类产品的相关扩展。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&#xA;&lt;h2 class=&#34;relative group&#34;&gt;详细更新（按主题）&#xA;    &lt;div id=&#34;详细更新按主题&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#%e8%af%a6%e7%bb%86%e6%9b%b4%e6%96%b0%e6%8c%89%e4%b8%bb%e9%a2%98&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h2&gt;&#xA;&#xA;&lt;h3 class=&#34;relative group&#34;&gt;1) Gemini 3 Flash：极速的前沿智能&#xA;    &lt;div id=&#34;1-gemini-3-flash极速的前沿智能&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#1-gemini-3-flash%e6%9e%81%e9%80%9f%e7%9a%84%e5%89%8d%e6%b2%bf%e6%99%ba%e8%83%bd&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;简介：发布了 Gemini 3 Flash，目标是在保留前沿推理能力的同时显著提升响应速度并降低成本。&lt;/p&gt;</description>
       
