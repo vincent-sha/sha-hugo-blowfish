@@ -9,7 +9,177 @@
     <managingEditor>vincentshajing@gmail.com (Vincent Sha)</managingEditor>
     <webMaster>vincentshajing@gmail.com (Vincent Sha)</webMaster>
     <copyright>© 2026 Vincent Sha</copyright>
-    <atom:link href="http://localhost:1313/categories/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title> Swift 6.2 最新并发教程</title>
+      <link>http://localhost:1313/posts/mastering-swift-6-2-concurrency/</link>
+      <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/mastering-swift-6-2-concurrency/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Swift 6.2 新功能大详解</title>
+      <link>http://localhost:1313/posts/swift-6-2-new-features-xcode26/</link>
+      <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/swift-6-2-new-features-xcode26/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>SwiftUI布局结构详解</title>
+      <link>http://localhost:1313/posts/swiftui-layout-structure-explanation/</link>
+      <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/swiftui-layout-structure-explanation/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>SwiftUI入门指南</title>
+      <link>http://localhost:1313/posts/swiftui-getstarted-guide/</link>
+      <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/swiftui-getstarted-guide/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Xcode快捷键大全</title>
+      <link>http://localhost:1313/posts/xcode-keyboard-shortcut/</link>
+      <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/xcode-keyboard-shortcut/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Swift编程入门</title>
+      <link>http://localhost:1313/posts/swift-get-start/</link>
+      <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/swift-get-start/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>开源后端SonicJS部署指南</title>
+      <link>http://localhost:1313/posts/sonicjs-modern-typescript-headless-cms/</link>
+      <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/sonicjs-modern-typescript-headless-cms/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Hugo 动态内容的利器——Content Adapters</title>
+      <link>http://localhost:1313/posts/hugo-content-adapters/</link>
+      <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/hugo-content-adapters/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Git 常用命令详解与实用指南</title>
+      <link>http://localhost:1313/posts/git-common-commands-guide/</link>
+      <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/git-common-commands-guide/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Hugo 安装 giscus 评论系统教程</title>
+      <link>http://localhost:1313/posts/hugo-comments-systems-comparison-giscus-setup/</link>
+      <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/hugo-comments-systems-comparison-giscus-setup/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Hugo安装教程（WIN11系统）</title>
+      <link>http://localhost:1313/posts/hugo-win-intall/</link>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/hugo-win-intall/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Hugo 模块使用指南</title>
+      <link>http://localhost:1313/posts/use-hugo-modules/</link>
+      <pubDate>Thu, 06 Nov 2025 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/use-hugo-modules/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Hugo Gallery 画廊主题简介</title>
+      <link>http://localhost:1313/posts/hugo-gallery-photo-gallery-theme/</link>
+      <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/hugo-gallery-photo-gallery-theme/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Git与GitHub入门指南</title>
+      <link>http://localhost:1313/posts/git-and-github-introduction-guide/</link>
+      <pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/git-and-github-introduction-guide/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Cloudflare托管Hugo网站完整指南</title>
+      <link>http://localhost:1313/posts/host-hugo-site-on-cloudflare/</link>
+      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/host-hugo-site-on-cloudflare/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Hugo静态网站目录结构详解</title>
+      <link>http://localhost:1313/posts/hugo-directory-structure/</link>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/hugo-directory-structure/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Hugo静态网站入门指南</title>
+      <link>http://localhost:1313/posts/hugo-quick-start-guide/</link>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/hugo-quick-start-guide/</guid>
+      <description></description>
+      
+    </item>
     
   </channel>
 </rss>

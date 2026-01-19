@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NotebookLM on 文森的科技小站</title>
+    <link>http://localhost:1313/tags/notebooklm/</link>
+    <description>Recent content in NotebookLM on 文森的科技小站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>vincentshajing@gmail.com (Vincent Sha)</managingEditor>
+    <webMaster>vincentshajing@gmail.com (Vincent Sha)</webMaster>
+    <copyright>© 2026 Vincent Sha</copyright>
+    <lastBuildDate>Fri, 02 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/notebooklm/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>NotebookLM 完整使用指南（2025）</title>
+      <link>http://localhost:1313/posts/notebooklm-complete-guide-2025/</link>
+      <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/notebooklm-complete-guide-2025/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -9,7 +9,37 @@
     <managingEditor>vincentshajing@gmail.com (Vincent Sha)</managingEditor>
     <webMaster>vincentshajing@gmail.com (Vincent Sha)</webMaster>
     <copyright>© 2026 Vincent Sha</copyright>
-    <atom:link href="http://localhost:1313/categories/tech-news/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/tech-news/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Google：2025年12月 AI 更新要点汇总</title>
+      <link>http://localhost:1313/posts/google-ai-updates-december-2025/</link>
+      <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/google-ai-updates-december-2025/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>NotebookLM 完整使用指南（2025）</title>
+      <link>http://localhost:1313/posts/notebooklm-complete-guide-2025/</link>
+      <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/notebooklm-complete-guide-2025/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>2025 年GitHub上最具影响力的开源项目</title>
+      <link>http://localhost:1313/posts/most-influential-open-source-projects-2025/</link>
+      <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/most-influential-open-source-projects-2025/</guid>
+      <description></description>
+      
+    </item>
     
   </channel>
 </rss>

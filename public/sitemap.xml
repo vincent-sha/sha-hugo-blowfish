@@ -3,25 +3,125 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/posts/git-common-commands-guide/</loc>
-    <lastmod>2025-11-27T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/posts/mastering-swift-6-2-concurrency/</loc>
+    <lastmod>2026-01-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/swift-6-2-new-features-xcode26/</loc>
+    <lastmod>2026-01-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/swiftui-layout-structure-explanation/</loc>
+    <lastmod>2026-01-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/swiftui-getstarted-guide/</loc>
+    <lastmod>2026-01-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/xcode-keyboard-shortcut/</loc>
+    <lastmod>2026-01-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-11-27T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-04T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-11-27T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-04T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/posts/swift-get-start/</loc>
+    <lastmod>2026-01-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/google-ai-updates-december-2025/</loc>
+    <lastmod>2026-01-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/notebooklm-complete-guide-2025/</loc>
+    <lastmod>2026-01-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/essential-meta-quest-apps/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/steam-frame-vs-vision-pro-vs-quest-3-gaming-specs/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/most-influential-open-source-projects-2025/</loc>
+    <lastmod>2025-12-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/sonicjs-modern-typescript-headless-cms/</loc>
+    <lastmod>2025-12-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/hugo-content-adapters/</loc>
+    <lastmod>2025-12-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/git-common-commands-guide/</loc>
+    <lastmod>2025-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/hugo-comments-systems-comparison-giscus-setup/</loc>
+    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/hugo-win-intall/</loc>
+    <lastmod>2025-11-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/use-hugo-modules/</loc>
+    <lastmod>2025-11-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/hugo-gallery-photo-gallery-theme/</loc>
+    <lastmod>2025-11-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/posts/git-and-github-introduction-guide/</loc>
     <lastmod>2025-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/host-hugo-site-on-cloudflare/</loc>
+    <lastmod>2025-10-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/hugo-directory-structure/</loc>
+    <lastmod>2025-10-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/posts/hugo-quick-start-guide/</loc>
+    <lastmod>2025-10-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   <url>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloudflare on 文森的科技小站</title>
+    <link>http://localhost:1313/tags/cloudflare/</link>
+    <description>Recent content in Cloudflare on 文森的科技小站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>vincentshajing@gmail.com (Vincent Sha)</managingEditor>
+    <webMaster>vincentshajing@gmail.com (Vincent Sha)</webMaster>
+    <copyright>© 2026 Vincent Sha</copyright>
+    <lastBuildDate>Fri, 31 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Cloudflare托管Hugo网站完整指南</title>
+      <link>http://localhost:1313/posts/host-hugo-site-on-cloudflare/</link>
+      <pubDate>Fri, 31 Oct 2025 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/host-hugo-site-on-cloudflare/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

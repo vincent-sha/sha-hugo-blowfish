@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>入门 on 文森的科技小站</title>
+    <link>http://localhost:1313/tags/%E5%85%A5%E9%97%A8/</link>
+    <description>Recent content in 入门 on 文森的科技小站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>vincentshajing@gmail.com (Vincent Sha)</managingEditor>
+    <webMaster>vincentshajing@gmail.com (Vincent Sha)</webMaster>
+    <copyright>© 2026 Vincent Sha</copyright>
+    <lastBuildDate>Sun, 04 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%85%A5%E9%97%A8/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SwiftUI入门指南</title>
+      <link>http://localhost:1313/posts/swiftui-getstarted-guide/</link>
+      <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/swiftui-getstarted-guide/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Swift编程入门</title>
+      <link>http://localhost:1313/posts/swift-get-start/</link>
+      <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/swift-get-start/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>开源后端SonicJS部署指南</title>
+      <link>http://localhost:1313/posts/sonicjs-modern-typescript-headless-cms/</link>
+      <pubDate>Sat, 06 Dec 2025 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/sonicjs-modern-typescript-headless-cms/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Git与GitHub入门指南</title>
+      <link>http://localhost:1313/posts/git-and-github-introduction-guide/</link>
+      <pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/git-and-github-introduction-guide/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Hugo静态网站入门指南</title>
+      <link>http://localhost:1313/posts/hugo-quick-start-guide/</link>
+      <pubDate>Thu, 30 Oct 2025 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (Vincent Sha)</author>
+      <guid>http://localhost:1313/posts/hugo-quick-start-guide/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
