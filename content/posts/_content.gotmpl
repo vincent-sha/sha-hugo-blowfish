@@ -1,5 +1,5 @@
 {{/* Get remote data. */}}
-{{ $url := "https://my-sonicjs-app.vincentshajing.workers.dev/api/content" }}
+{{ $url := "https://my-sonicjs-app.vincentshajing.workers.dev/api/content?limit=1000" }}
 {{ $data := dict }}
 {{ with try (resources.GetRemote $url) }}
   {{ with .Err }}
