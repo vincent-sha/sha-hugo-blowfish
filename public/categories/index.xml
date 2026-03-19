@@ -9,12 +9,12 @@
     <managingEditor>vincentshajing@gmail.com</managingEditor>
     <webMaster>vincentshajing@gmail.com</webMaster>
     <copyright>© 2026 </copyright>
-    <lastBuildDate>Sun, 04 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>技术教程</title>
       <link>http://localhost:1313/categories/tutorial/</link>
-      <pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>vincentshajing@gmail.com</author>
       <guid>http://localhost:1313/categories/tutorial/</guid>
       <description></description>
@@ -22,21 +22,21 @@
     </item>
     
     <item>
-      <title>科技资讯</title>
-      <link>http://localhost:1313/categories/tech-news/</link>
-      <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
+      <title>科技潮品</title>
+      <link>http://localhost:1313/categories/tech-gadgets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>vincentshajing@gmail.com</author>
-      <guid>http://localhost:1313/categories/tech-news/</guid>
+      <guid>http://localhost:1313/categories/tech-gadgets/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>科技潮品</title>
-      <link>http://localhost:1313/categories/tech-gadgets/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <title>科技资讯</title>
+      <link>http://localhost:1313/categories/tech-news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>vincentshajing@gmail.com</author>
-      <guid>http://localhost:1313/categories/tech-gadgets/</guid>
+      <guid>http://localhost:1313/categories/tech-news/</guid>
       <description></description>
       
     </item>
