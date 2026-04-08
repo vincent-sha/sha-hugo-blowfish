@@ -1,5 +1,6 @@
 {{/* Get remote data. */}}
 {{ $url := "https://my-sonicjs-app.vincentshajing.workers.dev/api/content?limit=1000" }}
+{{ $assetBaseURL := "https://my-sonicjs-app.vincentshajing.workers.dev" }}
 {{ $data := dict }}
 {{ with try (resources.GetRemote $url) }}
   {{ with .Err }}
@@ -18,6 +19,9 @@
   {{ if and $itemData.content (eq .status "published") }}
     {{/* Optimize content: normalize line endings and preserve indentation */}}
     {{ $contentValue := replace $itemData.content "\r\n" "\n" }}
+    {{ if in $contentValue "attachment:" }}
+      {{ $contentValue = replace $contentValue "attachment:" (printf "%s/attachment:" $assetBaseURL) }}
+    {{ end }}
     {{ $content := dict "mediaType" "text/markdown" "value" $contentValue }}
     
     {{/* Handle Date */}}
@@ -58,7 +62,7 @@
     {{ end }}
     
     {{ if and $featureimage (not (hasPrefix $featureimage "http")) }}
-        {{ $featureimage = printf "https://my-sonicjs-app.vincentshajing.workers.dev%s" $featureimage }}
+      {{ $featureimage = printf "%s%s" $assetBaseURL $featureimage }}
     {{ end }}
 
     {{ $params := dict 

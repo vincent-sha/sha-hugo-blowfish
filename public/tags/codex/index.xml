@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Codex on 文森的科技小站</title>
+    <link>http://localhost:1313/tags/codex/</link>
+    <description>Recent content in Codex on 文森的科技小站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>vincentshajing@gmail.com (文森的科技小站)</managingEditor>
+    <webMaster>vincentshajing@gmail.com (文森的科技小站)</webMaster>
+    <copyright>© 2026 文森的科技小站</copyright>
+    <lastBuildDate>Sat, 28 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/codex/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>使用 Codex 与 Figma 构建前端界面</title>
+      <link>http://localhost:1313/posts/codex-figma/</link>
+      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (文森的科技小站)</author>
+      <guid>http://localhost:1313/posts/codex-figma/</guid>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;使用 Codex 与 Figma 构建前端界面&#xA;    &lt;div id=&#34;使用-codex-与-figma-构建前端界面&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#%e4%bd%bf%e7%94%a8-codex-%e4%b8%8e-figma-%e6%9e%84%e5%bb%ba%e5%89%8d%e7%ab%af%e7%95%8c%e9%9d%a2&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h1&gt;&#xA;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;Building frontend UIs with Codex and Figma&#34;&#xA;    src=&#34;http://developers.openai.com/images/blog/building-frontend-uis-with-codex-and-figma.png&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&#xA;&lt;h2 class=&#34;relative group&#34;&gt;简介&#xA;    &lt;div id=&#34;简介&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#%e7%ae%80%e4%bb%8b&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h2&gt;&#xA;&lt;p&gt;从今天起，你可以通过 Figma MCP server 从 Codex 直接生成 Figma 设计文件。MCP server 支持双向流动：把可运行的界面带到 Figma 画布上，或把画布上的设计语境带回 Codex 以生成或更新代码。这个往返流程让从原型到生产应用的迭代比以往更顺畅。&lt;/p&gt;&#xA;&lt;p&gt;为什么要把 Codex 和 Figma 连接起来？&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;在设计与开发之间建立单向或双向的自动化桥梁，减少手工重建界面的成本。&lt;/li&gt;&#xA;&lt;li&gt;利用 Figma 的画布做探索与协作，将高保真设计/交互直接映射为可运行的前端界面。&lt;/li&gt;&#xA;&lt;li&gt;实现“从任意位置开始构建”的灵活工作流：设计 -&amp;gt; 代码 -&amp;gt; 画布 -&amp;gt; 代码。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;h2 class=&#34;relative group&#34;&gt;准备工作与前提&#xA;    &lt;div id=&#34;准备工作与前提&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c%e4%b8%8e%e5%89%8d%e6%8f%90&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;在本地或线上能运行你要捕获的应用界面（本地 dev server 或公网上的 URL）。&lt;/li&gt;&#xA;&lt;li&gt;在 Codex 桌面应用中安装并配置 Figma MCP server（详情见下方文档链接）。&lt;/li&gt;&#xA;&lt;li&gt;在 Figma 中拥有要采集的文件（Design、Make、FigJam 均支持）。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;h2 class=&#34;relative group&#34;&gt;从设计开始构建应用（Design → Code）&#xA;    &lt;div id=&#34;从设计开始构建应用design--code&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#%e4%bb%8e%e8%ae%be%e8%ae%a1%e5%bc%80%e5%a7%8b%e6%9e%84%e5%bb%ba%e5%ba%94%e7%94%a8design--code&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Figma MCP server 的常见用例之一是从 Figma 文件提取上下文并将其用于代码生成。MCP server 能捕获 Figma Design、Make、FigJam 文件中的布局、样式与组件信息，并把这些信息传给 Codex 作为生成代码时的重要上下文。&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

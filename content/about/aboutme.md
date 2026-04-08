@@ -41,6 +41,14 @@ showBreadcrumbs: false
 
 ---
 
+## 免责声明（Disclosure）
+
+部分本网站中的链接为联盟推广链接（Affiliate Links）。这意味着如果你点击这些链接并购买相关产品，我可能会获得一定的联盟佣金，但你无需支付任何额外费用。我只会推荐我认为能够真正为读者带来价值的产品或服务。
+
+Disclosure: Some of the links on this website are affiliate links. This means that if you click on the link and purchase the item, I may receive an affiliate commission at no extra cost to you. I only recommend products or services I believe will add value to my readers.
+
+---
+
 > 想了解更多？欢迎在文章下方留言或通过社交联系我 — 我会尽力回复并分享有用的资源。
 
 

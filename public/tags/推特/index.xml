@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>推特 on 文森的科技小站</title>
+    <link>http://localhost:1313/tags/%E6%8E%A8%E7%89%B9/</link>
+    <description>Recent content in 推特 on 文森的科技小站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>vincentshajing@gmail.com (文森的科技小站)</managingEditor>
+    <webMaster>vincentshajing@gmail.com (文森的科技小站)</webMaster>
+    <copyright>© 2026 文森的科技小站</copyright>
+    <lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%8E%A8%E7%89%B9/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>X上伊朗战争的AI伪造内容泛滥成灾</title>
+      <link>http://localhost:1313/posts/fake-ai-iran-war-x-grok/</link>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (文森的科技小站)</author>
+      <guid>http://localhost:1313/posts/fake-ai-iran-war-x-grok/</guid>
+      <description>&lt;h1 class=&#34;relative group&#34;&gt;X上伊朗战争的AI伪造内容泛滥成灾&#xA;    &lt;div id=&#34;x上伊朗战争的ai伪造内容泛滥成灾&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#x%e4%b8%8a%e4%bc%8a%e6%9c%97%e6%88%98%e4%ba%89%e7%9a%84ai%e4%bc%aa%e9%80%a0%e5%86%85%e5%ae%b9%e6%b3%9b%e6%bb%a5%e6%88%90%e7%81%be&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h1&gt;&#xA;&#xA;&lt;h2 class=&#34;relative group&#34;&gt;快速导读&#xA;    &lt;div id=&#34;快速导读&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#%e5%bf%ab%e9%80%9f%e5%af%bc%e8%af%bb&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;自2月28日美以对伊朗发动攻击以来，X（Twitter）上出现大量虚假或被篡改的影像证据，且越来越多由AI生成。&lt;/li&gt;&#xA;&lt;li&gt;X的AI助手Grok在核验视频与图片来源时多次出错，甚至将AI生成图像当作“证据”发布。&lt;/li&gt;&#xA;&lt;li&gt;国家级账号、付费蓝标账户与宣传网络都在放大这些内容；现有AI检测工具和平台标签机制仍然不足以遏制误导信息的传播。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&#xA;&lt;h2 class=&#34;relative group&#34;&gt;相关背景&#xA;    &lt;div id=&#34;相关背景&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#%e7%9b%b8%e5%85%b3%e8%83%8c%e6%99%af&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h2&gt;&#xA;&lt;p&gt;自美以对伊朗发动攻击以来，社交平台成为信息与误导并存的主要战场。原本用于分享现场画面的短视频、照片，因AI图像/视频生成工具的普及，出现大量看起来“很真实”但实际为伪造或拼接的内容。&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;&#34;&#xA;    src=&#34;https://vincent-image.org/file/1773211390795_GuEXFpmXoAAiGkC.jpg&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&lt;hr&gt;&#xA;&#xA;&lt;h2 class=&#34;relative group&#34;&gt;典型例子&#xA;    &lt;div id=&#34;典型例子&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#%e5%85%b8%e5%9e%8b%e4%be%8b%e5%ad%90&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h2&gt;&#xA;&lt;p&gt;当反信息专家Tal Hagin在X上请求Grok核验一段“伊朗导弹打中特拉维夫”的视频时，Grok多次误判视频的地点与日期（原视频来自伊朗国营媒体，实际并非特拉维夫事件源）。为了证明其判断，Grok还发布了一张AI生成的“战争图像”。Hagin反驳称这些都是“AI做出来的糊弄图”。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Grok相关帖：https://x.com/grok/status/2030774565291405566&lt;/li&gt;&#xA;&lt;li&gt;原始转发（PressTV）：https://x.com/PressTV/status/2030703851846701142&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;这个交互凸显两个问题：模型核验能力不稳、以及AI自身成为制造误导的工具。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&#xA;&lt;h2 class=&#34;relative group&#34;&gt;AI生成的大量案例&#xA;    &lt;div id=&#34;ai生成的大量案例&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#ai%e7%94%9f%e6%88%90%e7%9a%84%e5%a4%a7%e9%87%8f%e6%a1%88%e4%be%8b&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h2&gt;&#xA;&lt;p&gt;研究与媒体核查揭示了多个典型传播案例：&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

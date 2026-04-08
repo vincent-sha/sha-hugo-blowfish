@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trend on 文森的科技小站</title>
+    <link>http://localhost:1313/tags/trend/</link>
+    <description>Recent content in Trend on 文森的科技小站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>vincentshajing@gmail.com (文森的科技小站)</managingEditor>
+    <webMaster>vincentshajing@gmail.com (文森的科技小站)</webMaster>
+    <copyright>© 2026 文森的科技小站</copyright>
+    <lastBuildDate>Mon, 09 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/trend/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>GitHub开源程序每日推荐——Paperclip</title>
+      <link>http://localhost:1313/posts/github-trend-paperclip/</link>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (文森的科技小站)</author>
+      <guid>http://localhost:1313/posts/github-trend-paperclip/</guid>
+      <description>&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;&#34;&#xA;    src=&#34;https://vincent-image.org/file/1773039091274_header.png&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&#xA;&lt;h1 class=&#34;relative group&#34;&gt;开源编排平台—&lt;strong&gt;Paperclip&lt;/strong&gt;&#xA;    &lt;div id=&#34;开源编排平台paperclip&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#%e5%bc%80%e6%ba%90%e7%bc%96%e6%8e%92%e5%b9%b3%e5%8f%b0paperclip&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h1&gt;&#xA;&#xA;&lt;h2 class=&#34;relative group&#34;&gt;项目简介&#xA;    &lt;div id=&#34;项目简介&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#%e9%a1%b9%e7%9b%ae%e7%ae%80%e4%bb%8b&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Paperclip&lt;/strong&gt; 是由 &lt;code&gt;paperclipai&lt;/code&gt; 团队开发的一个面向“零人类公司（Zero-human companies）”的开源编排平台。简单来说，它就像是一个专为 &lt;strong&gt;AI 智能体（AI Agents）&lt;/strong&gt; 设计的“钉钉”或“飞书”，旨在让一支完全由 AI 组成的团队协同工作，自主经营业务。&#xA;Paperclip 是一个基于 &lt;strong&gt;Node.js 服务&lt;/strong&gt; 和 &lt;strong&gt;React UI&lt;/strong&gt; 的编排系统。它的核心逻辑是：&lt;strong&gt;将 AI 智能体视为员工&lt;/strong&gt;，通过任务管理、预算控制和组织架构，实现全自动化的业务运行。&lt;/p&gt;&#xA;&#xA;&lt;h2 class=&#34;relative group&#34;&gt;核心功能模块&#xA;    &lt;div id=&#34;核心功能模块&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#%e6%a0%b8%e5%bf%83%e5%8a%9f%e8%83%bd%e6%a8%a1%e5%9d%97&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h2&gt;&#xA;&#xA;&lt;h3 class=&#34;relative group&#34;&gt;1. 虚拟组织架构（Org Charts）&#xA;    &lt;div id=&#34;1-虚拟组织架构org-charts&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#1-%e8%99%9a%e6%8b%9f%e7%bb%84%e7%bb%87%e6%9e%b6%e6%9e%84org-charts&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h3&gt;&#xA;&lt;p&gt;Paperclip 不仅仅是运行一个脚本，它允许你定义复杂的公司结构。&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

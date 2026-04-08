@@ -6,17 +6,17 @@
     <description>Recent content in 分类 on 文森的科技小站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <managingEditor>vincentshajing@gmail.com</managingEditor>
-    <webMaster>vincentshajing@gmail.com</webMaster>
-    <copyright>© 2026 </copyright>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>vincentshajing@gmail.com (文森的科技小站)</managingEditor>
+    <webMaster>vincentshajing@gmail.com (文森的科技小站)</webMaster>
+    <copyright>© 2026 文森的科技小站</copyright>
+    <lastBuildDate>Tue, 07 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>技术教程</title>
-      <link>http://localhost:1313/categories/tutorial/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com</author>
-      <guid>http://localhost:1313/categories/tutorial/</guid>
+      <title>科技资讯</title>
+      <link>http://localhost:1313/categories/tech-news/</link>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (文森的科技小站)</author>
+      <guid>http://localhost:1313/categories/tech-news/</guid>
       <description></description>
       
     </item>
@@ -24,19 +24,19 @@
     <item>
       <title>科技潮品</title>
       <link>http://localhost:1313/categories/tech-gadgets/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com</author>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (文森的科技小站)</author>
       <guid>http://localhost:1313/categories/tech-gadgets/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>科技资讯</title>
-      <link>http://localhost:1313/categories/tech-news/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>vincentshajing@gmail.com</author>
-      <guid>http://localhost:1313/categories/tech-news/</guid>
+      <title>技术教程</title>
+      <link>http://localhost:1313/categories/tutorial/</link>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (文森的科技小站)</author>
+      <guid>http://localhost:1313/categories/tutorial/</guid>
       <description></description>
       
     </item>

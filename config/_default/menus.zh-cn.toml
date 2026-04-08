@@ -58,5 +58,20 @@
    name = "网站简介"
    pageRef = "about/aboutme/"
    weight = 40
+
+ [[footer]]
+   name = "隐私政策"
+   pageRef = "privacy-policy"
+   weight = 50
+
+ [[footer]]
+   name = "Cookie 政策"
+   pageRef = "cookie-policy"
+   weight = 60
+
+ [[footer]]
+   name = "服务条款"
+   pageRef = "terms-of-service"
+   weight = 70
   
  

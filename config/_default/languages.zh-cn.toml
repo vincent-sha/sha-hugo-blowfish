@@ -12,13 +12,14 @@ title = "文森的科技小站"
 
 # 默认站点作者设置
 [params.author]
+  name = "文森的科技小站"
    email = "vincentshajing@gmail.com"
    image = "img/avatar-sha02.png"
    bio = "文森的科技小站"
    headline = "Vincent's Tech Blog"
    links = [
      { x-twitter = "https://x.com/@vincentshaj" },
-     { github = "https:/github.com/vincent-sha" },
+     { github = "https://github.com/vincent-sha" },
      { youtube = "https://www.youtube.com/@vincentsha4819" },
      { facebook = "https://www.facebook.com/vincent.sha.948" },
      { reddit = "https://www.reddit.com/user/vincent-s" }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>新闻 on 文森的科技小站</title>
+    <link>http://localhost:1313/tags/%E6%96%B0%E9%97%BB/</link>
+    <description>Recent content in 新闻 on 文森的科技小站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>vincentshajing@gmail.com (文森的科技小站)</managingEditor>
+    <webMaster>vincentshajing@gmail.com (文森的科技小站)</webMaster>
+    <copyright>© 2026 文森的科技小站</copyright>
+    <lastBuildDate>Tue, 07 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%96%B0%E9%97%BB/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>阿耳忒弥斯 II：接近月球背面之前，我们需要了解的</title>
+      <link>http://localhost:1313/posts/artemis-ii-far-side-lunar-flyby/</link>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <author>vincentshajing@gmail.com (文森的科技小站)</author>
+      <guid>http://localhost:1313/posts/artemis-ii-far-side-lunar-flyby/</guid>
+      <description>&lt;figure&gt;&lt;img&#xA;    class=&#34;my-0 rounded-md&#34;&#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    fetchpriority=&#34;low&#34;&#xA;    alt=&#34;&#34;&#xA;    src=&#34;https://vincent-image.org/file/1775544098883_artemis-ii-j6-eng.jpg&#34;&#xA;    &gt;&lt;/figure&gt;&#xA;&#xA;&lt;h1 class=&#34;relative group&#34;&gt;阿耳忒弥斯 II：接近月球背面之前，我们需要了解的&#xA;    &lt;div id=&#34;阿耳忒弥斯-ii接近月球背面之前我们需要了解的&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#%e9%98%bf%e8%80%b3%e5%bf%92%e5%bc%a5%e6%96%af-ii%e6%8e%a5%e8%bf%91%e6%9c%88%e7%90%83%e8%83%8c%e9%9d%a2%e4%b9%8b%e5%89%8d%e6%88%91%e4%bb%ac%e9%9c%80%e8%a6%81%e4%ba%86%e8%a7%a3%e7%9a%84&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h1&gt;&#xA;&#xA;&lt;h2 class=&#34;relative group&#34;&gt;快速导览&#xA;    &lt;div id=&#34;快速导览&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#%e5%bf%ab%e9%80%9f%e5%af%bc%e8%a7%88&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h2&gt;&#xA;&lt;p&gt;阿耳忒弥斯 II（Artemis II）自 2026-04-01 从肯尼迪航天中心成功发射后一路稳定进入转月轨道。第六天任务进入关键阶段：航天器即将飞越月球背面（far side），机组成员拍下了多张壮观影像，同时在深空环境中测试生命维持、导航、通信与航天服等未来登月任务所需的关键系统。任务期间还发生了备受关注的生活保障小插曲——舱内仅有的一座厕所出现故障，工程团队与机组人员已采取应急方案。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&#xA;&lt;h2 class=&#34;relative group&#34;&gt;关键要点&#xA;    &lt;div id=&#34;关键要点&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#%e5%85%b3%e9%94%ae%e8%a6%81%e7%82%b9&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;任务阶段：阿耳忒弥斯 II 正在围绕月球飞行，准备飞越“月球背面”。&lt;/li&gt;&#xA;&lt;li&gt;预计飞越时间：2026-04-06 星期一，约 14:45 EDT / 19:45 BST（伦敦时间）；飞越为期约 6 小时，期间与地球的通信将中断。&lt;/li&gt;&#xA;&lt;li&gt;返回与溅落：计划于 2026-04-10 在太平洋（靠近加州海岸）溅落，任务共计约 10 天。&lt;/li&gt;&#xA;&lt;li&gt;机组成员（公开信息）：指挥官 Reid Wiseman；其他成员包括 Christina Koch、Victor Glover 与 Jeremy Hansen（共 4 人）。&lt;/li&gt;&#xA;&lt;li&gt;重要问题：飞船唯一的化学/废物管理系统出现故障（有闻到燃烧气味），疑似冰堵管道；NASA 已限制使用并启用应急排泄方案。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&#xA;&lt;h2 class=&#34;relative group&#34;&gt;月球背面&#xA;    &lt;div id=&#34;月球背面&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#%e6%9c%88%e7%90%83%e8%83%8c%e9%9d%a2&#34; aria-label=&#34;锚点&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h2&gt;&#xA;&lt;p&gt;阿耳忒弥斯 II 已进入月球的“影响球”（sphere of influence），也就是月球引力开始主导航天器运动的区域。航天器绕月运行并将在距离月面约 7,000 公里处进入无法与地球直接通讯的区域——这就是月球“背面”绕飞段，对人类而言是首次用肉眼直接观测到的区域（阿波罗任务未能到达此类位置）。&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
