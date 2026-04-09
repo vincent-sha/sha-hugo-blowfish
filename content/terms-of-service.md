@@ -31,6 +31,10 @@ showBreadcrumbs: true
 
 本网站部分链接可能为联盟推广链接（Affiliate Links）。你通过相关链接购买产品或服务时，站长可能获得佣金，但不会增加你的购买成本。
 
+作为 Amazon Associates 计划成员，本站会从符合条件的购买中获得收益。
+
+As an Amazon Associate, I earn from qualifying purchases.
+
 ## 责任限制
 
 在法律允许范围内，本网站不对因使用或无法使用本网站信息而产生的直接或间接损失承担责任。

@@ -39,6 +39,10 @@ showBreadcrumbs: true
 
 本网站部分链接可能为联盟推广链接（Affiliate Links）。如果你通过这些链接购买产品或服务，站长可能获得佣金，但你无需支付额外费用。
 
+作为 Amazon Associates 计划成员，本站会从符合条件的购买中获得收益。
+
+As an Amazon Associate, I earn from qualifying purchases.
+
 ## 你的权利
 
 你可通过页面提供的联系方式与我们联系，提出与个人数据相关的请求（例如咨询、删除建议等）。
