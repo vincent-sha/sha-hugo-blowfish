@@ -1,0 +1,25 @@
+{{/* 推荐文章 partial
+   从 series="recommend" 的文章中取出，按 series_order 排序展示
+*/}}
+{{ $seriesPages := slice }}
+{{ with site.Taxonomies.series }}
+  {{ with .recommend }}
+    {{ range .Pages }}
+      {{ $seriesPages = $seriesPages | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* 按 series_order 升序排序，未设置的排到最后 */}}
+{{ $sorted := sort $seriesPages "Params.series_order" "asc" }}
+
+{{ if $sorted }}
+<h2 class="mt-0 text-2xl font-extrabold mb-6">{{ i18n "shortcode.recommended_articles" | default "推荐文章" | emojify }}</h2>
+<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mb-10">
+  {{ range $sorted }}
+    <div>
+      {{ partial "article-link/card.html" . }}
+    </div>
+  {{ end }}
+</div>
+{{ end }}

@@ -53,6 +53,19 @@
       {{ $categories = split $itemData.categories "," }}
     {{ end }}
 
+    {{/* --- 新增：处理 Series 和 Series Order --- */}}
+    {{ $series := slice }}
+    {{ if $itemData.series }}
+      {{/* 假设数据源已经是数组格式，直接赋值；如果是字符串则需转换 */}}
+      {{ $series = $itemData.series }}
+    {{ end }}
+
+    {{ $seriesOrder := 0 }}
+    {{ if $itemData.series_order }}
+      {{ $seriesOrder = $itemData.series_order }}
+    {{ end }}
+    {{/* -------------------------------------- */}}
+
     {{/* Handle Feature Image */}}
     {{ $featureimage := "" }}
     {{ if $itemData.featureimage }}
@@ -70,6 +83,8 @@
       "featureimage" $featureimage
       "tags" $tags
       "categories" $categories
+      "series" $series
+      "series_order" $seriesOrder
       "slug" .slug
     }}
 
